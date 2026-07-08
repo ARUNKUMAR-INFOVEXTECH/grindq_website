@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GrindQ Technologies LLP has developed and published SSC Ranker Up, HappyFlow, and the Tamil Learning App — available on the Google Play Store.">
+  <meta name="keywords" content="SSC Ranker Up, HappyFlow App, Tamil Learning App, GrindQ Applications, Play Store Apps India">
+  <meta name="author" content="GrindQ Technologies LLP">
+  <meta property="og:title" content="Our Applications | GrindQ Technologies LLP">
+  <meta property="og:description" content="Discover published applications from GrindQ Technologies — SSC Ranker Up, HappyFlow, and the Tamil Learning App.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.grindq.com/applications.html">
+  <title>Our Applications | GrindQ Technologies LLP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* ── DESIGN TOKENS ── */
+    :root {
+      --color-background: #ffffff;
+      --color-primary:    #0F172A;
+      --color-secondary:  #2563EB;
+      --color-bg:         #FFFFFF;
+      --color-light:      #F8FAFC;
+      --color-border:     #E5E7EB;
+      --color-text:       #111827;
+      --color-muted:      #6B7280;
+      --font:             'Inter', -apple-system, 'Segoe UI', Arial, sans-serif;
+      --radius:           10px;
+      --shadow:           0 4px 6px -1px rgba(15,23,42,.05), 0 2px 4px -1px rgba(15,23,42,.03);
+      --shadow-hover:     0 10px 15px -3px rgba(15,23,42,.08), 0 4px 6px -2px rgba(15,23,42,.05);
+      --transition:       all .22s ease;
+    
+      --border-radius: 10px;
+      --transition-base: all 0.25s ease;
+      --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --color-text-muted: #6B7280;}
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { font-family: var(--font); background: var(--color-bg); color: var(--color-text); line-height: 1.65; -webkit-font-smoothing: antialiased; }
+    img, svg { vertical-align: middle; max-width: 100%; }
+    a { color: inherit; }
+
+    /* ── TYPOGRAPHY ── */
+    h1, h2, h3, h4 { color: var(--color-primary); font-weight: 700; line-height: 1.25; margin-bottom: .75rem; }
+    h1 { font-size: 2.6rem; letter-spacing: -.025em; }
+    h2 { font-size: 1.9rem; letter-spacing: -.02em; }
+    h3 { font-size: 1.3rem; font-weight: 600; }
+    p  { color: var(--color-muted); margin-bottom: 1.15rem; }
+
+    /* ── LAYOUT ── */
+    .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+    .section    { padding: 5rem 0; }
+
+        /* ── STICKY HEADER & NAVIGATION ── */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-bottom: 1px solid var(--color-border);
+      backdrop-filter: blur(8px);
+      transition: var(--transition-base);
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+    }
+
+    .logo-text {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      letter-spacing: -0.01em;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+    }
+
+    .nav-link {
+      color: var(--color-text-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: var(--transition-base);
+      padding: 0.5rem 0.25rem;
+      border-bottom: 2px solid transparent;
+      white-space: nowrap;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--color-primary);
+      border-bottom-color: var(--color-secondary);
+    }
+
+    .nav-btn {
+      margin-left: 0.5rem;
+      padding: 0.55rem 1.25rem;
+      font-size: 0.875rem;
+      background-color: var(--color-secondary);
+      color: #ffffff;
+      border-radius: var(--border-radius);
+      text-decoration: none;
+      font-weight: 600;
+      transition: var(--transition-base);
+      border: 1px solid var(--color-secondary);
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .nav-btn:hover {
+      background-color: var(--color-primary);
+      border-color: var(--color-primary);
+      color: #ffffff;
+    }
+
+    .nav-btn:hover svg {
+      transform: translateX(3px);
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--color-primary);
+      padding: 0.5rem;
+    }
+
+    /* ── POLICIES DROPDOWN ── */
+    .nav-dropdown { position: relative; display: flex; align-items: center; }
+    .nav-dropdown-btn { display: flex; align-items: center; gap: .3rem; background: none; border: none; border-bottom: 2px solid transparent; cursor: pointer; color: var(--color-text-muted); font-size: 0.875rem; font-weight: 500; padding: 0.4rem 0.2rem; transition: var(--transition-base); white-space: nowrap; font-family: var(--font-family); line-height: 1; }
+    .nav-dropdown-btn:hover, .nav-dropdown-btn.active { color: var(--color-primary); border-bottom-color: var(--color-secondary); }
+    .nav-dropdown-menu { display: none; position: absolute; top: calc(100% + 10px); right: 0; background: var(--color-background); border: 1px solid var(--color-border); border-radius: var(--border-radius); padding: .5rem; min-width: 215px; box-shadow: 0 8px 20px -4px rgba(15,23,42,.1); z-index: 200; }
+    .nav-dropdown:hover .nav-dropdown-menu { display: block; }
+    .nav-dropdown-menu.show { display: block; }
+    .nav-dropdown-item { display: block; padding: .55rem .9rem; font-size: 0.875rem; color: var(--color-text-muted); text-decoration: none; border-radius: 6px; transition: var(--transition-base); white-space: nowrap; }
+    .nav-dropdown-item:hover { background: var(--color-light); color: var(--color-primary); }
+    .nav-dropdown-item.active { color: var(--color-secondary); font-weight: 600; }
+
+    /* ── PAGE BANNER ── */
+    .page-banner { background: linear-gradient(180deg,#fff 0%,#F8FAFC 100%); padding: 4.5rem 0 3.5rem; border-bottom: 1px solid var(--color-border); text-align: center; }
+    .page-banner h1 { margin-bottom: 1rem; }
+    .page-banner p  { font-size: 1.1rem; max-width: 680px; margin: 0 auto; }
+    .tag { font-size: .8rem; font-weight: 600; text-transform: uppercase; letter-spacing: .1em; color: var(--color-secondary); display: inline-block; margin-bottom: .65rem; }
+
+    /* ── APP CARD ── */
+    .app-card { display: grid; grid-template-columns: 280px 1fr; border: 1px solid var(--color-border); border-radius: 14px; overflow: hidden; background: var(--color-bg); margin-bottom: 2.5rem; transition: var(--shadow-hover); }
+    .app-card:hover { box-shadow: var(--shadow-hover); }
+    .app-card-brand { background: var(--color-light); padding: 2.5rem 2rem; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; border-right: 1px solid var(--color-border); }
+    .app-icon { width: 96px; height: 96px; border-radius: 22px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.2rem; font-size: 2.8rem; }
+    .app-card-brand .app-name { font-size: 1.1rem; font-weight: 700; color: var(--color-primary); margin-bottom: .35rem; }
+    .app-card-brand .app-cat { font-size: .78rem; font-weight: 600; text-transform: uppercase; letter-spacing: .09em; color: var(--color-muted); margin-bottom: 1.2rem; }
+    .store-btn { display: inline-flex; align-items: center; gap: .5rem; font-size: .8rem; font-weight: 600; color: var(--color-primary); background: var(--color-bg); border: 1px solid var(--color-border); padding: .45rem .85rem; border-radius: 7px; text-decoration: none; transition: var(--transition); }
+    .store-btn:hover { background: var(--color-primary); color: #fff; border-color: var(--color-primary); }
+    .app-card-body { padding: 2.5rem; }
+    .app-card-body h3 { margin-bottom: .6rem; }
+    .app-card-body > p { font-size: .95rem; margin-bottom: 1.5rem; max-width: 560px; }
+
+    /* ── APP SPECS ROW ── */
+    .app-specs { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem; }
+    .spec-item { display: flex; align-items: center; gap: .4rem; font-size: .82rem; color: var(--color-muted); }
+    .spec-item svg { color: var(--color-secondary); flex-shrink: 0; }
+    .spec-item strong { color: var(--color-text); font-weight: 600; }
+
+    /* ── FEATURE LIST ── */
+    .feature-title { font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .07em; color: var(--color-primary); margin-bottom: .75rem; }
+    .feature-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: .55rem; margin-bottom: 1.5rem; }
+    .feature-item { display: flex; align-items: flex-start; gap: .5rem; font-size: .85rem; color: var(--color-text); line-height: 1.4; }
+    .feature-item svg { color: var(--color-secondary); flex-shrink: 0; margin-top: 2px; }
+
+    /* ── TECH BADGES ── */
+    .tech-grid { display: flex; flex-wrap: wrap; gap: .4rem; }
+    .tech-badge { font-size: .7rem; font-weight: 600; color: var(--color-primary); background: var(--color-light); border: 1px solid var(--color-border); padding: .18rem .5rem; border-radius: 4px; white-space: nowrap; }
+    .tech-badge.highlight { background: rgba(37,99,235,.07); border-color: rgba(37,99,235,.22); color: var(--color-secondary); }
+
+    /* ── STATUS BADGE ── */
+    .status-badge { display: inline-flex; align-items: center; gap: .3rem; font-size: .72rem; font-weight: 600; padding: .2rem .6rem; border-radius: 99px; }
+    .status-live   { background: #dcfce7; color: #16a34a; border: 1px solid #bbf7d0; }
+    .status-dev    { background: #fef9c3; color: #a16207; border: 1px solid #fde68a; }
+    .status-beta   { background: #ede9fe; color: #7c3aed; border: 1px solid #ddd6fe; }
+
+    /* ── CTA BAND ── */
+    .cta-band { background: var(--color-primary); border-radius: var(--radius); padding: 3.5rem 4rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap; margin-top: 4rem; }
+    .cta-band h2 { color: #fff; font-size: 1.6rem; margin-bottom: .4rem; }
+    .cta-band p { color: #94A3B8; margin-bottom: 0; }
+    .btn-sky { background: var(--color-secondary); color: #fff; border: 1px solid var(--color-secondary); border-radius: var(--radius); padding: .72rem 1.45rem; font-size: .92rem; font-weight: 600; text-decoration: none; transition: var(--transition); display: inline-block; }
+    .btn-sky:hover { background: #1d4ed8; border-color: #1d4ed8; }
+
+    /* ── FOOTER ── */
+    .footer { background: var(--color-primary); color: #fff; padding: 5rem 0 2rem; }
+    .footer-grid { display: grid; grid-template-columns: 1.2fr .8fr .8fr 1.2fr; gap: 3rem; margin-bottom: 4rem; }
+    .footer-col h3 { color: #fff; font-size: .95rem; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 1.4rem; font-weight: 600; }
+    .footer-col p { color: #94A3B8; font-size: .88rem; line-height: 1.6; }
+    .footer-links { list-style: none; }
+    .footer-links li { margin-bottom: .7rem; }
+    .footer-links a { color: #94A3B8; text-decoration: none; font-size: .88rem; transition: var(--transition); }
+    .footer-links a:hover { color: #fff; padding-left: 2px; }
+    .footer-logo-wrap { display: flex; align-items: center; gap: .7rem; text-decoration: none; margin-bottom: 1rem; }
+    .footer-logo-name { font-size: 1.15rem; font-weight: 700; color: #fff; }
+    .footer-addr { font-style: normal; color: #94A3B8; font-size: .85rem; line-height: 1.65; }
+    .footer-addr strong { color: #fff; }
+    .footer-bottom { border-top: 1px solid #1E293B; padding-top: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+    .footer-copy { color: #64748B; font-size: .85rem; margin-bottom: 0; }
+    .footer-legal { display: flex; gap: 1.5rem; }
+    .footer-legal a { color: #64748B; text-decoration: none; font-size: .85rem; transition: var(--transition); }
+    .footer-legal a:hover { color: #fff; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 1024px) {
+      .footer-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 1080px) {
+            .menu-toggle {
+        display: block;
+        z-index: 1001;
+      }
+      
+      .nav-menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 300px;
+        max-width: 85vw;
+        height: 100vh;
+        background-color: var(--color-background);
+        border-left: 1px solid var(--color-border);
+        padding: 5.5rem 2rem 2.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        box-shadow: -8px 0 25px -5px rgba(15, 23, 42, 0.08);
+        z-index: 999;
+        transform: translateX(100%);
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        overflow-y: auto;
+      }
+
+      .nav-menu.active {
+        display: flex;
+        transform: translateX(0);
+      }
+
+      .nav-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(15, 23, 42, 0.45);
+        backdrop-filter: blur(4px);
+        z-index: 998;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.35s ease, visibility 0.35s ease;
+      }
+
+      .nav-overlay.active {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .nav-link {
+        width: 100%;
+        padding: 0.5rem 0;
+        font-size: 1rem;
+      }
+
+      .nav-link:hover, .nav-link.active {
+        border-bottom-color: transparent;
+        color: var(--color-secondary);
+        padding-left: 0.5rem;
+      }
+
+      .nav-btn {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+        margin-top: 0.5rem;
+        padding: 0.75rem;
+      }
+      .nav-dropdown { width: 100%; flex-direction: column; align-items: flex-start; }
+      .nav-dropdown-btn { width: 100%; padding: .45rem 0; font-size: .95rem; border-bottom-color: transparent !important; justify-content: space-between; }
+      .nav-dropdown-btn:hover { color: var(--color-secondary); padding-left: .4rem; }
+      .nav-dropdown-menu { position: static; width: 100%; box-shadow: none; border-radius: 0; border: none; border-left: 2px solid var(--color-border); margin-top: .25rem; padding: .25rem 0 .25rem .75rem; background: transparent; }
+      .nav-dropdown-item { padding: .4rem .5rem; font-size: .9rem; }
+      
+      .app-card {
+        grid-template-columns: 1fr;
+      }
+      .app-card-brand {
+        border-right: none;
+        border-bottom: 1px solid var(--color-border);
+        padding: 2rem;
+        flex-direction: row;
+        justify-content: flex-start;
+        text-align: left;
+        gap: 1.5rem;
+      }
+      .app-icon {
+        margin: 0;
+        width: 72px;
+        height: 72px;
+      }
+      .cta-band {
+        padding: 2.5rem 2rem;
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+      
+      .nav a:hover, .nav a.active { border-bottom-color: transparent; color: var(--color-secondary); padding-left: .4rem; }
+      
+      .nav-dropdown { width: 100%; flex-direction: column; align-items: flex-start; }
+      .nav-dropdown-btn { width: 100%; padding: .45rem 0; font-size: .95rem; border-bottom-color: transparent !important; justify-content: space-between; }
+      .nav-dropdown-btn:hover { color: var(--color-secondary); padding-left: .4rem; }
+      .nav-dropdown-menu { position: static; width: 100%; box-shadow: none; border-radius: 0; border: none; border-left: 2px solid var(--color-border); margin-top: .25rem; padding: .25rem 0 .25rem .75rem; background: transparent; }
+      .nav-dropdown-item { padding: .4rem .5rem; font-size: .9rem; }
+      .app-card { grid-template-columns: 1fr; }
+      .app-card-brand { border-right: none; border-bottom: 1px solid var(--color-border); padding: 2rem; flex-direction: row; justify-content: flex-start; text-align: left; gap: 1.5rem; }
+      .app-icon { margin: 0; width: 72px; height: 72px; }
+      .cta-band { padding: 2.5rem 2rem; flex-direction: column; text-align: center; }
+    }
+    @media (max-width: 640px) {
+      .section { padding: 3.5rem 0; }
+      .app-card-brand {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1.5rem;
+      }
+      .app-icon {
+        margin: 0 0 1rem 0;
+      }
+      h1 { font-size: 2rem; }
+      .feature-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; }
+      .footer-legal { flex-direction: column; gap: .6rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════ HEADER ═══════════════════════════ -->
+<header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo" aria-label="GrindQ Technologies Logo Home"><span class="logo-text">GrindQ Technologies</span>
+      </a>
+      
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle Navigation Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="4" y1="6" x2="20" y2="6"></line>
+          <line x1="4" y1="12" x2="20" y2="12"></line>
+          <line x1="4" y1="18" x2="20" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="nav-overlay" id="navOverlay"></div>
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="applications.html" class="nav-link active">Applications</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-btn" id="policiesBtn" aria-haspopup="true" aria-expanded="false">Policies <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="nav-dropdown-menu" id="policiesMenu">
+            <a href="privacy-policy.html" class="nav-dropdown-item">Privacy Policy</a>
+            <a href="terms.html" class="nav-dropdown-item">Terms &amp; Conditions</a>
+            <a href="refund-policy.html" class="nav-dropdown-item">Refund Policy</a>
+          </div>
+        </div>
+        <a href="contact.html" class="nav-btn">Contact Us <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 6px; transition: transform 0.2s;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+      </nav>
+    </div>
+  </header>
+
+<main>
+  <!-- ════ PAGE BANNER ════ -->
+  <section class="page-banner">
+    <div class="container">
+      <span class="tag">Published Products</span>
+      <h1>Our Applications</h1>
+      <p>Consumer and education-focused applications developed and published by GrindQ Technologies LLP on the Google Play Store.</p>
+    </div>
+  </section>
+
+  <!-- ════ APPLICATIONS ════ -->
+  <section class="section">
+    <div class="container">
+
+      <!-- ─── APP 1: SSC Ranker Up ─── -->
+      <div class="app-card" id="ssc-ranker-up">
+        <div class="app-card-brand">
+          <div class="app-icon" style="background:linear-gradient(135deg,#0F172A 60%,#2563EB 100%);" aria-hidden="true">
+            <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+          </div>
+          <div>
+            <p class="app-name">SSC Ranker Up</p>
+            <p class="app-cat">Exam Preparation</p>
+            <span class="status-badge status-live">
+              <svg width="7" height="7" viewBox="0 0 10 10" fill="currentColor"><circle cx="5" cy="5" r="5"/></svg>
+              Live on Play Store
+            </span>
+            <br><br>
+            <a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer" class="store-btn" aria-label="View SSC Ranker Up on Google Play">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"/><path d="M21 3L9 15"/><path d="M21 15v6H3V3h6"/></svg>
+              View on Play Store
+            </a>
+          </div>
+        </div>
+        <div class="app-card-body">
+          <h3>SSC Ranker Up — Government Exam Prep App</h3>
+          <p>A comprehensive Android application designed to help aspirants prepare for SSC (Staff Selection Commission) examinations including CGL, CHSL, MTS, and GD Constable. The app provides structured practice, timed mock tests, and detailed performance analytics to help students benchmark and improve their ranking.</p>
+          <div class="app-specs">
+            <div class="spec-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+              <span><strong>Platform:</strong>&nbsp;Android</span>
+            </div>
+            <div class="spec-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              <span><strong>Category:</strong>&nbsp;Education</span>
+            </div>
+            <div class="spec-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              <span><strong>Exams:</strong>&nbsp;SSC CGL, CHSL, MTS, GD</span>
+            </div>
+            <div class="spec-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span><strong>Language:</strong>&nbsp;English</span>
+            </div>
+          </div>
+          <p class="feature-title">Key Features</p>
+          <div class="feature-grid">
+            <div class="feature-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Full mock tests with real exam patterns
+            </div>
+            <div class="feature-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Subject-wise practice (GK, Math, English, Reasoning)
+            </div>
+            <div class="feature-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Timer-based sectional quizzes
+            </div>
+            <div class="feature-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Detailed solutions with explanations
+            </div>
+            <div class="feature-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Performance dashboard &amp; analytics
+            </div>
+            <div class="feature-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Offline practice mode
+            </div>
+          </div>
+          <p class="feature-title">Built With</p>
+          <div class="tech-grid">
+            <span class="tech-badge highlight">Flutter</span>
+            <span class="tech-badge highlight">Dart</span>
+            <span class="tech-badge">Firebase</span>
+            <span class="tech-badge">SQLite</span>
+            <span class="tech-badge">REST APIs</span>
+            <span class="tech-badge">Android SDK</span>
+            <span class="tech-badge">Google Play Console</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ─── APP 2: HappyFlow ─── -->
+      <div class="app-card" id="happyflow">
+        <div class="app-card-brand">
+          <div class="app-icon" style="background:linear-gradient(135deg,#0d9488 60%,#0891b2 100%);" aria-hidden="true">
+            <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M8 13s1.5 2 4 2 4-2 4-2"/>
+              <line x1="9" y1="9" x2="9.01" y2="9"/>
+              <line x1="15" y1="9" x2="15.01" y2="9"/>
+            </svg>
+          </div>
+          <div>
+            <p class="app-name">HappyFlow</p>
+            <p class="app-cat">Productivity &amp; Wellness</p>
+            <span class="status-badge status-live">
+              <svg width="7" height="7" viewBox="0 0 10 10" fill="currentColor"><circle cx="5" cy="5" r="5"/></svg>
+              Live on Play Store
+            </span>
+            <br><br>
+            <a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer" class="store-btn" aria-label="View HappyFlow on Google Play">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"/><path d="M21 3L9 15"/><path d="M21 15v6H3V3h6"/></svg>
+              View on Play Store
+            </a>
+          </div>
+        </div>
+        <div class="app-card-body">
+          <h3>HappyFlow — Productivity &amp; Wellness Tracker</h3>
+          <p>HappyFlow is a daily productivity and mental wellness application that helps users manage tasks, track emotional states, build positive habits, and maintain a focused mindset. The app integrates structured journaling, habit streaks, and goal-setting tools in a distraction-free interface.</p>
+          <div class="app-specs">
+            <div class="spec-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+              <span><strong>Platform:</strong>&nbsp;Android</span>
+            </div>
+            <div class="spec-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+              <span><strong>Category:</strong>&nbsp;Productivity</span>
+            </div>
+            <div class="spec-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              <span><strong>Focus:</strong>&nbsp;Habit &amp; Mood Tracking</span>
+            </div>
+          </div>
+          <p class="feature-title">Key Features</p>
+          <div class="feature-grid">
+            <div class="feature-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Daily mood &amp; energy check-ins
+            </div>
+            <div class="feature-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Habit building with streak tracking
+            </div>
+            <div class="feature-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Structured daily journaling
+            </div>
+            <div class="feature-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Goal creation &amp; milestone tracking
+            </div>
+            <div class="feature-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Progress reports &amp; weekly summaries
+            </div>
+            <div class="feature-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Minimal, distraction-free UI
+            </div>
+          </div>
+          <p class="feature-title">Built With</p>
+          <div class="tech-grid">
+            <span class="tech-badge highlight">Flutter</span>
+            <span class="tech-badge highlight">Dart</span>
+            <span class="tech-badge">Firebase Auth</span>
+            <span class="tech-badge">Firestore</span>
+            <span class="tech-badge">SQLite</span>
+            <span class="tech-badge">Android SDK</span>
+            <span class="tech-badge">Google Play Console</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ─── APP 3: Tamil Learning App ─── -->
+      <div class="app-card" id="tamil-learning-app">
+        <div class="app-card-brand">
+          <div class="app-icon" style="background:linear-gradient(135deg,#7c3aed 60%,#c026d3 100%);" aria-hidden="true">
+            <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+            </svg>
+          </div>
+          <div>
+            <p class="app-name">Learn Tamil Online</p>
+            <p class="app-cat">Language Learning</p>
+            <span class="status-badge status-dev">
+              <svg width="7" height="7" viewBox="0 0 10 10" fill="currentColor"><circle cx="5" cy="5" r="5"/></svg>
+              In Development
+            </span>
+          </div>
+        </div>
+        <div class="app-card-body">
+          <h3>Learn Tamil Online — Language Learning Platform</h3>
+          <p>A structured digital learning platform to help non-Tamil speakers learn the Tamil language through progressive lessons, audio pronunciation guides, vocabulary drills, and interactive quizzes. The platform is part of GrindQ's digital learning initiative and is designed to serve the Tamil diaspora globally.</p>
+          <div class="app-specs">
+            <div class="spec-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+              <span><strong>Platform:</strong>&nbsp;Android &amp; Web</span>
+            </div>
+            <div class="spec-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+              <span><strong>Category:</strong>&nbsp;Education</span>
+            </div>
+            <div class="spec-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10z"/></svg>
+              <span><strong>Audience:</strong>&nbsp;Global Tamil Diaspora</span>
+            </div>
+          </div>
+          <p class="feature-title">Key Features</p>
+          <div class="feature-grid">
+            <div class="feature-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Structured lesson plan (A1 to B2 levels)
+            </div>
+            <div class="feature-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Audio pronunciation with native speakers
+            </div>
+            <div class="feature-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Script &amp; reading practice modules
+            </div>
+            <div class="feature-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Vocabulary flashcards &amp; spaced repetition
+            </div>
+            <div class="feature-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Progress tracking &amp; level tests
+            </div>
+            <div class="feature-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Cultural context lessons
+            </div>
+          </div>
+          <p class="feature-title">Built With</p>
+          <div class="tech-grid">
+            <span class="tech-badge highlight">Flutter</span>
+            <span class="tech-badge highlight">Dart</span>
+            <span class="tech-badge highlight">React / Next.js</span>
+            <span class="tech-badge">Firebase</span>
+            <span class="tech-badge">Node.js</span>
+            <span class="tech-badge">MongoDB</span>
+            <span class="tech-badge">AWS S3</span>
+            <span class="tech-badge">Android SDK</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ─── CTA BAND ─── -->
+      <div class="cta-band">
+        <div>
+          <h2>Have an app idea?</h2>
+          <p>We develop, test, and publish Android &amp; iOS apps end-to-end. Let's build yours.</p>
+        </div>
+        <a href="contact.html" class="btn-sky">Discuss Your App Idea</a>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="footer-logo-wrap"><span class="footer-logo-name">GrindQ Technologies</span>
+        </a>
+        <p style="margin-bottom:1.4rem">Independent IT Services and Software Development Company based in Coimbatore, India.</p>
+        <address class="footer-addr">
+          <strong>Registered Office:</strong><br>
+          120/3B, Main Road, Karavalli Madhapur,<br>
+          Somanur, Coimbatore, TN – 641668, India
+        </address>
+      </div>
+      <div class="footer-col">
+        <h3>Services</h3>
+        <ul class="footer-links">
+          <li><a href="services.html#web-development">Web Development</a></li>
+          <li><a href="services.html#app-development">App Development</a></li>
+          <li><a href="services.html#crm-erp">CRM &amp; ERP</a></li>
+          <li><a href="services.html#cloud-devops">Cloud &amp; DevOps</a></li>
+          <li><a href="services.html#ai-analytics">AI &amp; Analytics</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="applications.html">Applications</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Legal &amp; Support</h3>
+        <ul class="footer-links">
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          <li><a href="refund-policy.html">Refund Policy</a></li>
+          <li style="margin-top:1rem;color:#94A3B8;font-size:.83rem">Support:<br>
+            <a href="mailto:support@grindq.com" style="color:#fff;font-weight:600">support@grindq.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2026 GrindQ Technologies LLP. All Rights Reserved.</p>
+      <div class="footer-legal">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+        <a href="refund-policy.html">Refund Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- Menu Toggle JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+            // Hamburger Menu Drawer Toggle
+      const menuToggle = document.getElementById('menuToggle');
+      const navMenu = document.getElementById('navMenu');
+      const navOverlay = document.getElementById('navOverlay');
+      
+      if (menuToggle && navMenu) {
+        function toggleMenu() {
+          const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+          const newExpanded = !isExpanded;
+          menuToggle.setAttribute('aria-expanded', newExpanded);
+          navMenu.classList.toggle('active');
+          if (navOverlay) {
+            navOverlay.classList.toggle('active');
+          }
+          document.body.style.overflow = newExpanded ? 'hidden' : '';
+        }
+
+        menuToggle.addEventListener('click', toggleMenu);
+        if (navOverlay) {
+          navOverlay.addEventListener('click', toggleMenu);
+        }
+
+        const navLinks = navMenu.querySelectorAll('.nav-link, .nav-dropdown-item, .nav-btn');
+        navLinks.forEach(link => {
+          link.addEventListener('click', function() {
+            menuToggle.setAttribute('aria-expanded', 'false');
+            navMenu.classList.remove('active');
+            if (navOverlay) {
+              navOverlay.classList.remove('active');
+            }
+            document.body.style.overflow = '';
+          });
+        });
+      }
+
+      // Policies dropdown
+      const polBtn = document.getElementById('policiesBtn');
+      const polMenu = document.getElementById('policiesMenu');
+      if (polBtn && polMenu) {
+        polBtn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          const show = polMenu.classList.toggle('show');
+          polBtn.setAttribute('aria-expanded', show);
+        });
+        document.addEventListener('click', function(e) {
+          if (!polBtn.contains(e.target)) {
+            polMenu.classList.remove('show');
+            polBtn.setAttribute('aria-expanded', 'false');
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>

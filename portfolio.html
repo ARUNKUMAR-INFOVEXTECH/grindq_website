@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore GrindQ Technologies LLP's portfolio of software projects across web development, mobile apps, LMS platforms, and enterprise systems.">
+  <meta name="keywords" content="GrindQ Portfolio, Software Projects India, Web App Portfolio, Mobile App Portfolio, IT Company Portfolio Coimbatore">
+  <meta name="author" content="GrindQ Technologies LLP">
+  <meta property="og:title" content="Portfolio | GrindQ Technologies LLP">
+  <meta property="og:description" content="A showcase of software products, web platforms, and mobile applications developed by GrindQ Technologies LLP.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.grindq.com/portfolio.html">
+  <title>Portfolio | GrindQ Technologies LLP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* ── DESIGN TOKENS ── */
+    :root {
+      --color-background: #ffffff;
+      --color-primary:    #0F172A;
+      --color-secondary:  #2563EB;
+      --color-bg:         #FFFFFF;
+      --color-light:      #F8FAFC;
+      --color-border:     #E5E7EB;
+      --color-text:       #111827;
+      --color-muted:      #6B7280;
+      --font:             'Inter', -apple-system, 'Segoe UI', Arial, sans-serif;
+      --radius:           10px;
+      --shadow:           0 4px 6px -1px rgba(15,23,42,.05), 0 2px 4px -1px rgba(15,23,42,.03);
+      --shadow-hover:     0 10px 15px -3px rgba(15,23,42,.08), 0 4px 6px -2px rgba(15,23,42,.05);
+      --transition:       all .22s ease;
+    
+      --border-radius: 10px;
+      --transition-base: all 0.25s ease;
+      --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --color-text-muted: #6B7280;}
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { font-family: var(--font); background: var(--color-bg); color: var(--color-text); line-height: 1.65; -webkit-font-smoothing: antialiased; }
+    img, svg { vertical-align: middle; max-width: 100%; }
+    a { color: inherit; }
+
+    /* ── TYPOGRAPHY ── */
+    h1, h2, h3, h4 { color: var(--color-primary); font-weight: 700; line-height: 1.25; margin-bottom: .75rem; }
+    h1 { font-size: 2.6rem; letter-spacing: -.025em; }
+    h2 { font-size: 1.9rem; letter-spacing: -.02em; }
+    h3 { font-size: 1.15rem; font-weight: 600; }
+    p  { color: var(--color-muted); margin-bottom: 1.15rem; }
+
+    /* ── LAYOUT ── */
+    .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+    .section    { padding: 5rem 0; }
+
+        /* ── STICKY HEADER & NAVIGATION ── */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-bottom: 1px solid var(--color-border);
+      backdrop-filter: blur(8px);
+      transition: var(--transition-base);
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+    }
+
+    .logo-text {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      letter-spacing: -0.01em;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+    }
+
+    .nav-link {
+      color: var(--color-text-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: var(--transition-base);
+      padding: 0.5rem 0.25rem;
+      border-bottom: 2px solid transparent;
+      white-space: nowrap;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--color-primary);
+      border-bottom-color: var(--color-secondary);
+    }
+
+    .nav-btn {
+      margin-left: 0.5rem;
+      padding: 0.55rem 1.25rem;
+      font-size: 0.875rem;
+      background-color: var(--color-secondary);
+      color: #ffffff;
+      border-radius: var(--border-radius);
+      text-decoration: none;
+      font-weight: 600;
+      transition: var(--transition-base);
+      border: 1px solid var(--color-secondary);
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .nav-btn:hover {
+      background-color: var(--color-primary);
+      border-color: var(--color-primary);
+      color: #ffffff;
+    }
+
+    .nav-btn:hover svg {
+      transform: translateX(3px);
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--color-primary);
+      padding: 0.5rem;
+    }
+
+    /* ── POLICIES DROPDOWN ── */
+    .nav-dropdown { position: relative; display: flex; align-items: center; }
+    .nav-dropdown-btn { display: flex; align-items: center; gap: .3rem; background: none; border: none; border-bottom: 2px solid transparent; cursor: pointer; color: var(--color-text-muted); font-size: 0.875rem; font-weight: 500; padding: 0.4rem 0.2rem; transition: var(--transition-base); white-space: nowrap; font-family: var(--font-family); line-height: 1; }
+    .nav-dropdown-btn:hover, .nav-dropdown-btn.active { color: var(--color-primary); border-bottom-color: var(--color-secondary); }
+    .nav-dropdown-menu { display: none; position: absolute; top: calc(100% + 10px); right: 0; background: var(--color-background); border: 1px solid var(--color-border); border-radius: var(--border-radius); padding: .5rem; min-width: 215px; box-shadow: 0 8px 20px -4px rgba(15,23,42,.1); z-index: 200; }
+    .nav-dropdown:hover .nav-dropdown-menu { display: block; }
+    .nav-dropdown-menu.show { display: block; }
+    .nav-dropdown-item { display: block; padding: .55rem .9rem; font-size: 0.875rem; color: var(--color-text-muted); text-decoration: none; border-radius: 6px; transition: var(--transition-base); white-space: nowrap; }
+    .nav-dropdown-item:hover { background: var(--color-light); color: var(--color-primary); }
+    .nav-dropdown-item.active { color: var(--color-secondary); font-weight: 600; }
+
+    /* ── PAGE BANNER ── */
+    .page-banner { background: linear-gradient(180deg,#fff 0%,#F8FAFC 100%); padding: 4.5rem 0 3.5rem; border-bottom: 1px solid var(--color-border); text-align: center; }
+    .page-banner h1 { margin-bottom: 1rem; }
+    .page-banner p { font-size: 1.1rem; max-width: 680px; margin: 0 auto; }
+    .tag { font-size: .8rem; font-weight: 600; text-transform: uppercase; letter-spacing: .1em; color: var(--color-secondary); display: inline-block; margin-bottom: .65rem; }
+
+    /* ── FILTER TABS ── */
+    .filter-row { display: flex; align-items: center; flex-wrap: wrap; gap: .5rem; margin-bottom: 2.5rem; }
+    .filter-btn { font-size: .82rem; font-weight: 600; padding: .42rem 1rem; border-radius: 99px; border: 1px solid var(--color-border); background: transparent; color: var(--color-muted); cursor: pointer; transition: var(--transition); }
+    .filter-btn:hover { border-color: var(--color-primary); color: var(--color-primary); }
+    .filter-btn.active { background: var(--color-primary); color: #fff; border-color: var(--color-primary); }
+
+    /* ── PORTFOLIO GRID ── */
+    .portfolio-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+    .portfolio-card { border: 1px solid var(--color-border); border-radius: 14px; overflow: hidden; background: var(--color-bg); transition: var(--transition); }
+    .portfolio-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-3px); }
+    .pc-thumb { height: 200px; display: flex; align-items: center; justify-content: center; font-size: 4rem; position: relative; overflow: hidden; }
+    .pc-thumb-label { position: absolute; top: 1rem; left: 1rem; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: #fff; background: rgba(15,23,42,.45); backdrop-filter: blur(4px); padding: .22rem .6rem; border-radius: 99px; }
+    .pc-body { padding: 1.5rem; }
+    .pc-body h3 { font-size: 1.05rem; margin-bottom: .4rem; }
+    .pc-body p { font-size: .85rem; margin-bottom: 1rem; line-height: 1.5; }
+    .pc-meta { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: .5rem; }
+    .pc-tags { display: flex; flex-wrap: wrap; gap: .35rem; }
+    .pc-tag { font-size: .68rem; font-weight: 600; padding: .15rem .45rem; border-radius: 4px; background: var(--color-light); border: 1px solid var(--color-border); color: var(--color-muted); }
+    .pc-tag.blue { background: rgba(37,99,235,.07); border-color: rgba(37,99,235,.2); color: var(--color-secondary); }
+
+    /* ── STATUS PILL ── */
+    .status-pill { display: inline-flex; align-items: center; gap: .3rem; font-size: .68rem; font-weight: 700; padding: .18rem .55rem; border-radius: 99px; white-space: nowrap; }
+    .status-live   { background: #dcfce7; color: #16a34a; border: 1px solid #bbf7d0; }
+    .status-dev    { background: #fef9c3; color: #a16207; border: 1px solid #fde68a; }
+    .status-beta   { background: #ede9fe; color: #7c3aed; border: 1px solid #ddd6fe; }
+    .status-complete { background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; }
+
+    /* ── FEATURED CARD ── */
+    .portfolio-card.featured { grid-column: span 2; }
+    .portfolio-card.featured .pc-thumb { height: 240px; }
+
+    /* ── STATS STRIP ── */
+    .stats-strip { background: var(--color-light); border: 1px solid var(--color-border); border-radius: var(--radius); padding: 2.5rem 3rem; display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; text-align: center; margin-bottom: 4rem; }
+    .stat-item h2 { font-size: 2.2rem; color: var(--color-secondary); margin-bottom: .2rem; }
+    .stat-item p { font-size: .85rem; margin: 0; }
+
+    /* ── CTA BAND ── */
+    .cta-band { background: var(--color-primary); border-radius: var(--radius); padding: 3.5rem 4rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap; margin-top: 4rem; }
+    .cta-band h2 { color: #fff; font-size: 1.6rem; margin-bottom: .4rem; }
+    .cta-band p { color: #94A3B8; margin-bottom: 0; }
+    .btn-sky { background: var(--color-secondary); color: #fff; border: 1px solid var(--color-secondary); border-radius: var(--radius); padding: .72rem 1.45rem; font-size: .92rem; font-weight: 600; text-decoration: none; transition: var(--transition); display: inline-block; }
+    .btn-sky:hover { background: #1d4ed8; border-color: #1d4ed8; }
+
+    /* ── FOOTER ── */
+    .footer { background: var(--color-primary); color: #fff; padding: 5rem 0 2rem; }
+    .footer-grid { display: grid; grid-template-columns: 1.2fr .8fr .8fr 1.2fr; gap: 3rem; margin-bottom: 4rem; }
+    .footer-col h3 { color: #fff; font-size: .95rem; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 1.4rem; font-weight: 600; }
+    .footer-col p { color: #94A3B8; font-size: .88rem; line-height: 1.6; }
+    .footer-links { list-style: none; }
+    .footer-links li { margin-bottom: .7rem; }
+    .footer-links a { color: #94A3B8; text-decoration: none; font-size: .88rem; transition: var(--transition); }
+    .footer-links a:hover { color: #fff; padding-left: 2px; }
+    .footer-logo-wrap { display: flex; align-items: center; gap: .7rem; text-decoration: none; margin-bottom: 1rem; }
+    .footer-logo-name { font-size: 1.15rem; font-weight: 700; color: #fff; }
+    .footer-addr { font-style: normal; color: #94A3B8; font-size: .85rem; line-height: 1.65; }
+    .footer-addr strong { color: #fff; }
+    .footer-bottom { border-top: 1px solid #1E293B; padding-top: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+    .footer-copy { color: #64748B; font-size: .85rem; margin-bottom: 0; }
+    .footer-legal { display: flex; gap: 1.5rem; }
+    .footer-legal a { color: #64748B; text-decoration: none; font-size: .85rem; transition: var(--transition); }
+    .footer-legal a:hover { color: #fff; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 1024px) {
+      .footer-grid { grid-template-columns: repeat(2, 1fr); }
+      .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
+      .portfolio-card.featured { grid-column: span 2; }
+      .stats-strip { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+    }
+    @media (max-width: 1080px) {
+            .menu-toggle {
+        display: block;
+        z-index: 1001;
+      }
+      
+      .nav-menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 300px;
+        max-width: 85vw;
+        height: 100vh;
+        background-color: var(--color-background);
+        border-left: 1px solid var(--color-border);
+        padding: 5.5rem 2rem 2.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        box-shadow: -8px 0 25px -5px rgba(15, 23, 42, 0.08);
+        z-index: 999;
+        transform: translateX(100%);
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        overflow-y: auto;
+      }
+
+      .nav-menu.active {
+        display: flex;
+        transform: translateX(0);
+      }
+
+      .nav-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(15, 23, 42, 0.45);
+        backdrop-filter: blur(4px);
+        z-index: 998;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.35s ease, visibility 0.35s ease;
+      }
+
+      .nav-overlay.active {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .nav-link {
+        width: 100%;
+        padding: 0.5rem 0;
+        font-size: 1rem;
+      }
+
+      .nav-link:hover, .nav-link.active {
+        border-bottom-color: transparent;
+        color: var(--color-secondary);
+        padding-left: 0.5rem;
+      }
+
+      .nav-btn {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+        margin-top: 0.5rem;
+        padding: 0.75rem;
+      }
+      .nav-dropdown { width: 100%; flex-direction: column; align-items: flex-start; }
+      .nav-dropdown-btn { width: 100%; padding: .45rem 0; font-size: .95rem; border-bottom-color: transparent !important; justify-content: space-between; }
+      .nav-dropdown-btn:hover { color: var(--color-secondary); padding-left: .4rem; }
+      .nav-dropdown-menu { position: static; width: 100%; box-shadow: none; border-radius: 0; border: none; border-left: 2px solid var(--color-border); margin-top: .25rem; padding: .25rem 0 .25rem .75rem; background: transparent; }
+      .nav-dropdown-item { padding: .4rem .5rem; font-size: .9rem; }
+      
+      .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .portfolio-card.featured {
+        grid-column: span 2;
+      }
+      .stats-strip {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+      }
+      .cta-band {
+        padding: 2.5rem 2rem;
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+      
+      .nav a:hover, .nav a.active { border-bottom-color: transparent; color: var(--color-secondary); padding-left: .4rem; }
+      
+      .nav-dropdown { width: 100%; flex-direction: column; align-items: flex-start; }
+      .nav-dropdown-btn { width: 100%; padding: .45rem 0; font-size: .95rem; border-bottom-color: transparent !important; justify-content: space-between; }
+      .nav-dropdown-btn:hover { color: var(--color-secondary); padding-left: .4rem; }
+      .nav-dropdown-menu { position: static; width: 100%; box-shadow: none; border-radius: 0; border: none; border-left: 2px solid var(--color-border); margin-top: .25rem; padding: .25rem 0 .25rem .75rem; background: transparent; }
+      .nav-dropdown-item { padding: .4rem .5rem; font-size: .9rem; }
+      .cta-band { padding: 2.5rem 2rem; flex-direction: column; text-align: center; }
+    }
+    @media (max-width: 640px) {
+      .section { padding: 3.5rem 0; }
+      h1 { font-size: 2rem; }
+      .portfolio-grid { grid-template-columns: 1fr; }
+      .portfolio-card.featured { grid-column: span 1; }
+      .stats-strip { grid-template-columns: 1fr; padding: 2rem 1.5rem; gap: 1.5rem; }
+      .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; }
+      .footer-legal { flex-direction: column; gap: .6rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════ HEADER ═══════════════════════════ -->
+<header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo" aria-label="GrindQ Technologies Logo Home"><span class="logo-text">GrindQ Technologies</span>
+      </a>
+      
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle Navigation Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="4" y1="6" x2="20" y2="6"></line>
+          <line x1="4" y1="12" x2="20" y2="12"></line>
+          <line x1="4" y1="18" x2="20" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="nav-overlay" id="navOverlay"></div>
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="applications.html" class="nav-link">Applications</a>
+        <a href="portfolio.html" class="nav-link active">Portfolio</a>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-btn" id="policiesBtn" aria-haspopup="true" aria-expanded="false">Policies <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="nav-dropdown-menu" id="policiesMenu">
+            <a href="privacy-policy.html" class="nav-dropdown-item">Privacy Policy</a>
+            <a href="terms.html" class="nav-dropdown-item">Terms &amp; Conditions</a>
+            <a href="refund-policy.html" class="nav-dropdown-item">Refund Policy</a>
+          </div>
+        </div>
+        <a href="contact.html" class="nav-btn">Contact Us <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 6px; transition: transform 0.2s;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+      </nav>
+    </div>
+  </header>
+
+<main>
+  <!-- ════ PAGE BANNER ════ -->
+  <section class="page-banner">
+    <div class="container">
+      <span class="tag">Our Work</span>
+      <h1>Project Portfolio</h1>
+      <p>A selection of software products, digital platforms, and applications designed and developed by the GrindQ Technologies team.</p>
+    </div>
+  </section>
+
+  <!-- ════ PORTFOLIO BODY ════ -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Stats -->
+      <div class="stats-strip">
+        <div class="stat-item">
+          <h2>3+</h2>
+          <p>Published Applications</p>
+        </div>
+        <div class="stat-item">
+          <h2>9</h2>
+          <p>Service Domains</p>
+        </div>
+        <div class="stat-item">
+          <h2>20+</h2>
+          <p>Technology Stacks</p>
+        </div>
+        <div class="stat-item">
+          <h2>2022</h2>
+          <p>Year Founded</p>
+        </div>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-row" role="group" aria-label="Filter portfolio by category">
+        <button class="filter-btn active" data-filter="all" onclick="filterCards(this, 'all')">All Projects</button>
+        <button class="filter-btn" data-filter="mobile" onclick="filterCards(this, 'mobile')">Mobile Apps</button>
+        <button class="filter-btn" data-filter="web" onclick="filterCards(this, 'web')">Web Platforms</button>
+        <button class="filter-btn" data-filter="education" onclick="filterCards(this, 'education')">Education</button>
+        <button class="filter-btn" data-filter="enterprise" onclick="filterCards(this, 'enterprise')">Enterprise</button>
+        <button class="filter-btn" data-filter="productivity" onclick="filterCards(this, 'productivity')">Productivity</button>
+      </div>
+
+      <!-- Portfolio Grid -->
+      <div class="portfolio-grid" id="portfolioGrid">
+
+        <!-- Card 1: SSC Ranker Up (Featured) -->
+        <div class="portfolio-card featured" data-category="mobile education">
+          <div class="pc-thumb" style="background:linear-gradient(135deg,#0F172A 0%,#1E3A5F 50%,#2563EB 100%);">
+            <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <span class="pc-thumb-label">Mobile App</span>
+          </div>
+          <div class="pc-body">
+            <h3>National Government Exam Preparation Platform (SSC Ranker Up)</h3>
+            <p>A high-concurrency mobile application and mock assessment platform built for SSC CGL, CHSL, and MTS candidates. Engineered to support 100,000+ active practice assessments with offline-first local SQLite synchronization.</p>
+            <div class="pc-meta">
+              <div class="pc-tags">
+                <span class="pc-tag blue">Flutter</span>
+                <span class="pc-tag blue">Firebase</span>
+                <span class="pc-tag">SQLite</span>
+                <span class="pc-tag">Android</span>
+                <span class="pc-tag">Education</span>
+              </div>
+              <span class="status-pill status-live">
+                <svg width="6" height="6" viewBox="0 0 10 10" fill="currentColor"><circle cx="5" cy="5" r="5"/></svg>
+                Live
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: HappyFlow -->
+        <div class="portfolio-card" data-category="mobile productivity">
+          <div class="pc-thumb" style="background:linear-gradient(135deg,#0d9488 0%,#0891b2 100%);">
+            <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 13s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+            <span class="pc-thumb-label">Mobile App</span>
+          </div>
+          <div class="pc-body">
+            <h3>Enterprise Productivity &amp; Wellness Platform (HappyFlow)</h3>
+            <p>A commercial productivity and wellness mobile application built for employee engagement. Features daily habit auditing, real-time Firestore synchronization, and progress analytics, helping corporate teams improve engagement by 25%.</p>
+            <div class="pc-meta">
+              <div class="pc-tags">
+                <span class="pc-tag blue">Flutter</span>
+                <span class="pc-tag blue">Firestore</span>
+                <span class="pc-tag">Dart</span>
+                <span class="pc-tag">Android</span>
+              </div>
+              <span class="status-pill status-live">
+                <svg width="6" height="6" viewBox="0 0 10 10" fill="currentColor"><circle cx="5" cy="5" r="5"/></svg>
+                Live
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Tamil Learning App -->
+        <div class="portfolio-card" data-category="mobile web education">
+          <div class="pc-thumb" style="background:linear-gradient(135deg,#7c3aed 0%,#c026d3 100%);">
+            <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            <span class="pc-thumb-label">Mobile + Web</span>
+          </div>
+          <div class="pc-body">
+            <h3>Global Language Learning Portal (Learn Tamil Online)</h3>
+            <p>A multi-tenant digital language learning system built for the global Tamil diaspora. Supports native audio sync, progressive curriculum models, and automated evaluation, scaling to 15,000+ monthly active learners.</p>
+            <div class="pc-meta">
+              <div class="pc-tags">
+                <span class="pc-tag blue">Flutter</span>
+                <span class="pc-tag blue">Next.js</span>
+                <span class="pc-tag">Firebase</span>
+                <span class="pc-tag">Node.js</span>
+              </div>
+              <span class="status-pill status-dev">
+                <svg width="6" height="6" viewBox="0 0 10 10" fill="currentColor"><circle cx="5" cy="5" r="5"/></svg>
+                In Development
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: CRM Platform (Generic) -->
+        <div class="portfolio-card" data-category="web enterprise">
+          <div class="pc-thumb" style="background:linear-gradient(135deg,#1e40af 0%,#1d4ed8 100%);">
+            <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/></svg>
+            <span class="pc-thumb-label">Web App</span>
+          </div>
+          <div class="pc-body">
+            <h3>Enterprise CRM &amp; Pipeline Management System</h3>
+            <p>Bespoke customer relationship management platform engineered for a global logistics firm. Automated lead pipelines, contact scheduling, and custom analytics, reducing sales cycle times by 35%.</p>
+            <div class="pc-meta">
+              <div class="pc-tags">
+                <span class="pc-tag blue">React</span>
+                <span class="pc-tag blue">Node.js</span>
+                <span class="pc-tag">PostgreSQL</span>
+                <span class="pc-tag">Enterprise</span>
+              </div>
+              <span class="status-pill status-complete">
+                <svg width="6" height="6" viewBox="0 0 10 10" fill="currentColor"><circle cx="5" cy="5" r="5"/></svg>
+                Delivered
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5: E-Commerce Web -->
+        <div class="portfolio-card" data-category="web enterprise">
+          <div class="pc-thumb" style="background:linear-gradient(135deg,#0f766e 0%,#0d9488 100%);">
+            <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+            <span class="pc-thumb-label">Web Platform</span>
+          </div>
+          <div class="pc-body">
+            <h3>B2B E-Commerce &amp; Retail Supply-Chain Portal</h3>
+            <p>Full-stack digital commerce platform with inventory management, Razorpay payment gateway integration, and real-time merchant reporting dashboard, facilitating 10,000+ monthly sales transactions.</p>
+            <div class="pc-meta">
+              <div class="pc-tags">
+                <span class="pc-tag blue">Next.js</span>
+                <span class="pc-tag blue">MongoDB</span>
+                <span class="pc-tag">Razorpay</span>
+                <span class="pc-tag">Vercel</span>
+              </div>
+              <span class="status-pill status-complete">
+                <svg width="6" height="6" viewBox="0 0 10 10" fill="currentColor"><circle cx="5" cy="5" r="5"/></svg>
+                Delivered
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6: LMS Portal -->
+        <div class="portfolio-card" data-category="web education">
+          <div class="pc-thumb" style="background:linear-gradient(135deg,#9333ea 0%,#7c3aed 100%);">
+            <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            <span class="pc-thumb-label">Web App</span>
+          </div>
+          <div class="pc-body">
+            <h3>Multi-Tenant Learning Management System (LMS)</h3>
+            <p>White-label academic portal supporting live virtual WebRTC classroom lectures, course builders, student evaluation engines, and automated certification, deployed across 12 educational institutions.</p>
+            <div class="pc-meta">
+              <div class="pc-tags">
+                <span class="pc-tag blue">React</span>
+                <span class="pc-tag blue">Python</span>
+                <span class="pc-tag">WebRTC</span>
+                <span class="pc-tag">AWS</span>
+              </div>
+              <span class="status-pill status-beta">
+                <svg width="6" height="6" viewBox="0 0 10 10" fill="currentColor"><circle cx="5" cy="5" r="5"/></svg>
+                Beta
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 7: Inventory ERP -->
+        <div class="portfolio-card" data-category="web enterprise">
+          <div class="pc-thumb" style="background:linear-gradient(135deg,#0369a1 0%,#0284c7 100%);">
+            <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"/><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+            <span class="pc-thumb-label">Enterprise</span>
+          </div>
+          <div class="pc-body">
+            <h3>Factory Operations &amp; Inventory ERP System</h3>
+            <p>Enterprise planning dashboard developed for a mid-size manufacturing plant. Coordinates vendor logistics, inventory alerts, and financial audits, reducing operational overhead by 18%.</p>
+            <div class="pc-meta">
+              <div class="pc-tags">
+                <span class="pc-tag blue">C# / .NET</span>
+                <span class="pc-tag blue">SQL Server</span>
+                <span class="pc-tag">Angular</span>
+                <span class="pc-tag">Azure</span>
+              </div>
+              <span class="status-pill status-complete">
+                <svg width="6" height="6" viewBox="0 0 10 10" fill="currentColor"><circle cx="5" cy="5" r="5"/></svg>
+                Delivered
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 8: HR Dashboard -->
+        <div class="portfolio-card" data-category="web enterprise productivity">
+          <div class="pc-thumb" style="background:linear-gradient(135deg,#1d4ed8 0%,#3b82f6 100%);">
+            <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span class="pc-thumb-label">Web App</span>
+          </div>
+          <div class="pc-body">
+            <h3>HR &amp; Payroll Management Dashboard</h3>
+            <p>Automated human resources portal featuring biometric attendance synchronization, salary tier computation, tax (TDS) calculations, and digital payslip delivery for 500+ employees.</p>
+            <div class="pc-meta">
+              <div class="pc-tags">
+                <span class="pc-tag blue">Vue.js</span>
+                <span class="pc-tag blue">Django</span>
+                <span class="pc-tag">PostgreSQL</span>
+                <span class="pc-tag">Docker</span>
+              </div>
+              <span class="status-pill status-complete">
+                <svg width="6" height="6" viewBox="0 0 10 10" fill="currentColor"><circle cx="5" cy="5" r="5"/></svg>
+                Delivered
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 9: AI Chatbot -->
+        <div class="portfolio-card" data-category="web enterprise">
+          <div class="pc-thumb" style="background:linear-gradient(135deg,#111827 0%,#374151 100%);">
+            <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M7 7h.01M11 7h6M7 11h.01M11 11h6"/></svg>
+            <span class="pc-thumb-label">AI Integration</span>
+          </div>
+          <div class="pc-body">
+            <h3>LLM-Powered Customer Support &amp; Escalation Engine</h3>
+            <p>AI customer agent integrated into WhatsApp API and web channels. Leverages vector search and custom FAQs to resolve 75% of customer support tickets automatically with live agent handover.</p>
+            <div class="pc-meta">
+              <div class="pc-tags">
+                <span class="pc-tag blue">OpenAI API</span>
+                <span class="pc-tag blue">LangChain</span>
+                <span class="pc-tag">Python</span>
+                <span class="pc-tag">WhatsApp API</span>
+              </div>
+              <span class="status-pill status-live">
+                <svg width="6" height="6" viewBox="0 0 10 10" fill="currentColor"><circle cx="5" cy="5" r="5"/></svg>
+                Live
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CTA Band -->
+      <div class="cta-band">
+        <div>
+          <h2>Looking for a software partner?</h2>
+          <p>We take ideas from concept to production. Share your requirements with us today.</p>
+        </div>
+        <a href="contact.html" class="btn-sky">Start a Project</a>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="footer-logo-wrap"><span class="footer-logo-name">GrindQ Technologies</span>
+        </a>
+        <p style="margin-bottom:1.4rem">Independent IT Services and Software Development Company based in Coimbatore, India.</p>
+        <address class="footer-addr">
+          <strong>Registered Office:</strong><br>
+          120/3B, Main Road, Karavalli Madhapur,<br>
+          Somanur, Coimbatore, TN – 641668, India
+        </address>
+      </div>
+      <div class="footer-col">
+        <h3>Services</h3>
+        <ul class="footer-links">
+          <li><a href="services.html#web-development">Web Development</a></li>
+          <li><a href="services.html#app-development">App Development</a></li>
+          <li><a href="services.html#crm-erp">CRM &amp; ERP</a></li>
+          <li><a href="services.html#cloud-devops">Cloud &amp; DevOps</a></li>
+          <li><a href="services.html#ai-analytics">AI &amp; Analytics</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="applications.html">Applications</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Legal &amp; Support</h3>
+        <ul class="footer-links">
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          <li><a href="refund-policy.html">Refund Policy</a></li>
+          <li style="margin-top:1rem;color:#94A3B8;font-size:.83rem">Support:<br>
+            <a href="mailto:support@grindq.com" style="color:#fff;font-weight:600">support@grindq.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2026 GrindQ Technologies LLP. All Rights Reserved.</p>
+      <div class="footer-legal">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+        <a href="refund-policy.html">Refund Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- Menu Toggle JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+            // Hamburger Menu Drawer Toggle
+      const menuToggle = document.getElementById('menuToggle');
+      const navMenu = document.getElementById('navMenu');
+      const navOverlay = document.getElementById('navOverlay');
+      
+      if (menuToggle && navMenu) {
+        function toggleMenu() {
+          const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+          const newExpanded = !isExpanded;
+          menuToggle.setAttribute('aria-expanded', newExpanded);
+          navMenu.classList.toggle('active');
+          if (navOverlay) {
+            navOverlay.classList.toggle('active');
+          }
+          document.body.style.overflow = newExpanded ? 'hidden' : '';
+        }
+
+        menuToggle.addEventListener('click', toggleMenu);
+        if (navOverlay) {
+          navOverlay.addEventListener('click', toggleMenu);
+        }
+
+        const navLinks = navMenu.querySelectorAll('.nav-link, .nav-dropdown-item, .nav-btn');
+        navLinks.forEach(link => {
+          link.addEventListener('click', function() {
+            menuToggle.setAttribute('aria-expanded', 'false');
+            navMenu.classList.remove('active');
+            if (navOverlay) {
+              navOverlay.classList.remove('active');
+            }
+            document.body.style.overflow = '';
+          });
+        });
+      }
+
+      // Policies dropdown
+      const polBtn = document.getElementById('policiesBtn');
+      const polMenu = document.getElementById('policiesMenu');
+      if (polBtn && polMenu) {
+        polBtn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          const show = polMenu.classList.toggle('show');
+          polBtn.setAttribute('aria-expanded', show);
+        });
+        document.addEventListener('click', function(e) {
+          if (!polBtn.contains(e.target)) {
+            polMenu.classList.remove('show');
+            polBtn.setAttribute('aria-expanded', 'false');
+          }
+        });
+      }
+    });
+  </script>
+
+  <script>
+  // Portfolio filter
+  function filterCards(el, filter) {
+    document.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
+    el.classList.add('active');
+    var cards = document.querySelectorAll('.portfolio-card');
+    cards.forEach(function(card) {
+      var cats = (card.getAttribute('data-category') || '').split(' ');
+      if (filter === 'all' || cats.indexOf(filter) !== -1) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+      if (filter === 'all' && card.classList.contains('featured')) {
+        card.style.gridColumn = 'span 2';
+      } else {
+        card.style.gridColumn = '';
+      }
+    });
+  }
+</script>
+</body>
+</html>

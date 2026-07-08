@@ -1,0 +1,2144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GrindQ Technologies LLP is an independent IT services, application development, and publishing company based in India. We offer reliable software solutions and digital learning initiatives.">
+  <meta name="keywords" content="GrindQ Technologies, GrindQ, IT Services Coimbatore, Application Publishing India, Tamil Learning Online, Software Development, SSC Ranker Up, HappyFlow">
+  <meta name="author" content="GrindQ Technologies LLP">
+  
+  <!-- OpenGraph Tags -->
+  <meta property="og:title" content="GrindQ Technologies LLP | IT Services & Application Publishing">
+  <meta property="og:description" content="Independent IT services, software development, application publishing, and digital learning initiatives from India.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.grindq.com/">
+  
+  <title>GrindQ Technologies LLP | IT Services & Application Publishing</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Embedded CSS Style System -->
+  <style>
+    /* -------------------------------------------------------------
+       1. DESIGN SYSTEM VARIABLES & RESET
+       ------------------------------------------------------------- */
+    :root {
+      --color-primary: #0F172A;      /* Slate 900 - Trust, Depth */
+      --color-secondary: #2563EB;    /* Blue 600 - Professionalism, Tech */
+      --color-background: #FFFFFF;   /* Clean white background */
+      --color-light: #F8FAFC;        /* Slate 50 - Soft sections */
+      --color-border: #E5E7EB;       /* Gray 200 - Clean borders */
+      --color-text: #111827;         /* Gray 900 - High legibility */
+      --color-text-muted: #6B7280;   /* Gray 500 - Secondary text */
+      --color-accent: #2563EB;       /* Blue 600 */
+      --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --border-radius: 10px;
+      --box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.05), 0 2px 4px -1px rgba(15, 23, 42, 0.03);
+      --box-shadow-hover: 0 10px 15px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -2px rgba(15, 23, 42, 0.05);
+      --transition-base: all 0.25s ease;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    img, svg { max-width: 100%; height: auto; }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font-family);
+      background-color: var(--color-background);
+      color: var(--color-text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    img, svg {
+      vertical-align: middle;
+      max-width: 100%;
+    }
+
+    /* -------------------------------------------------------------
+       2. TYPOGRAPHY & LAYOUT UTILITIES
+       ------------------------------------------------------------- */
+    h1, h2, h3, h4, h5, h6 {
+      color: var(--color-primary);
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+    }
+
+    h1 {
+      font-size: 2.75rem;
+      letter-spacing: -0.025em;
+    }
+
+    h2 {
+      font-size: 2rem;
+      letter-spacing: -0.02em;
+    }
+
+    h3 {
+      font-size: 1.35rem;
+      font-weight: 600;
+    }
+
+    p {
+      color: var(--color-text-muted);
+      margin-bottom: 1.25rem;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .section {
+      padding: 5rem 0;
+    }
+
+    .section-light {
+      background-color: var(--color-light);
+      border-top: 1px solid var(--color-border);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 3.5rem auto;
+    }
+
+    .section-header .tag {
+      font-size: 0.875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--color-secondary);
+      display: inline-block;
+      margin-bottom: 0.75rem;
+    }
+
+    .section-header p {
+      font-size: 1.125rem;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.75rem 1.5rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      border-radius: var(--border-radius);
+      text-decoration: none;
+      cursor: pointer;
+      transition: var(--transition-base);
+    }
+
+    .btn-primary {
+      background-color: var(--color-primary);
+      color: #ffffff;
+      border: 1px solid var(--color-primary);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--color-secondary);
+      border-color: var(--color-secondary);
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      color: var(--color-primary);
+      border: 1px solid var(--color-border);
+      margin-left: 0.75rem;
+    }
+
+    .btn-secondary:hover {
+      background-color: var(--color-light);
+      border-color: var(--color-text-muted);
+    }
+
+    .btn-accent {
+      background-color: var(--color-secondary);
+      color: #ffffff;
+      border: 1px solid var(--color-secondary);
+    }
+
+    .btn-accent:hover {
+      background-color: #1d4ed8;
+      border-color: #1d4ed8;
+    }
+
+    /* Grid Layouts */
+    .grid {
+      display: grid;
+      gap: 2rem;
+    }
+
+    .grid-2 { grid-template-columns: repeat(2, 1fr); }
+    .grid-3 { grid-template-columns: repeat(3, 1fr); }
+    .grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+    /* Cards */
+    .card {
+      background: var(--color-background);
+      border: 1px solid var(--color-border);
+      border-radius: var(--border-radius);
+      padding: 2rem;
+      transition: var(--transition-base);
+      box-shadow: var(--box-shadow);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--box-shadow-hover);
+    }
+
+    .card-icon {
+      color: var(--color-secondary);
+      margin-bottom: 1.25rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 8px;
+      background-color: rgba(37, 99, 235, 0.08);
+    }
+
+    /* -------------------------------------------------------------
+       3. STICKY HEADER & NAVIGATION
+       ------------------------------------------------------------- */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-bottom: 1px solid var(--color-border);
+      backdrop-filter: blur(8px);
+      transition: var(--transition-base);
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+    }
+
+    .logo-text {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      letter-spacing: -0.01em;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+    }
+
+    .nav-link {
+      color: var(--color-text-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: var(--transition-base);
+      padding: 0.5rem 0.25rem;
+      border-bottom: 2px solid transparent;
+      white-space: nowrap;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--color-primary);
+      border-bottom-color: var(--color-secondary);
+    }
+
+            .nav-btn {
+      margin-left: 0.5rem;
+      padding: 0.55rem 1.25rem;
+      font-size: 0.875rem;
+      background-color: var(--color-secondary);
+      color: #ffffff;
+      border-radius: var(--border-radius);
+      text-decoration: none;
+      font-weight: 600;
+      transition: var(--transition-base);
+      border: 1px solid var(--color-secondary);
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+            .nav-btn:hover {
+      background-color: var(--color-primary);
+      border-color: var(--color-primary);
+      color: #ffffff;
+    }
+
+        .nav-btn:hover svg {
+      transform: translateX(3px);
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--color-primary);
+      padding: 0.5rem;
+    }
+
+    .legal-nav-links-mobile {
+      display: none; /* Only visible on mobile menu dropdown */
+    }
+
+    /* ── POLICIES DROPDOWN ── */
+    .nav-dropdown { position: relative; display: flex; align-items: center; }
+    .nav-dropdown-btn { display: flex; align-items: center; gap: .3rem; background: none; border: none; border-bottom: 2px solid transparent; cursor: pointer; color: var(--color-text-muted); font-size: 0.875rem; font-weight: 500; padding: 0.4rem 0.2rem; transition: var(--transition-base); white-space: nowrap; font-family: var(--font-family); line-height: 1; }
+    .nav-dropdown-btn:hover, .nav-dropdown-btn.active { color: var(--color-primary); border-bottom-color: var(--color-secondary); }
+    .nav-dropdown-menu { display: none; position: absolute; top: calc(100% + 10px); right: 0; background: var(--color-background); border: 1px solid var(--color-border); border-radius: var(--border-radius); padding: .5rem; min-width: 215px; box-shadow: 0 8px 20px -4px rgba(15,23,42,.1); z-index: 200; }
+    .nav-dropdown:hover .nav-dropdown-menu { display: block; }
+    .nav-dropdown-menu.show { display: block; }
+    .nav-dropdown-item { display: block; padding: .55rem .9rem; font-size: 0.875rem; color: var(--color-text-muted); text-decoration: none; border-radius: 6px; transition: var(--transition-base); white-space: nowrap; }
+    .nav-dropdown-item:hover { background: var(--color-light); color: var(--color-primary); }
+    .nav-dropdown-item.active { color: var(--color-secondary); font-weight: 600; }
+
+    /* -------------------------------------------------------------
+       4. HERO SECTION
+       ------------------------------------------------------------- */
+    .hero-section {
+      padding: 6rem 0;
+      background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      align-items: center;
+      gap: 4rem;
+    }
+
+    .hero-content h1 {
+      margin-bottom: 1.5rem;
+      color: var(--color-primary);
+    }
+
+    .hero-content p {
+      font-size: 1.15rem;
+      margin-bottom: 2rem;
+      color: var(--color-text-muted);
+    }
+
+    .hero-buttons {
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-illustration {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* -------------------------------------------------------------
+       5. TRUST CARDS SECTION
+       ------------------------------------------------------------- */
+    .trust-section {
+      margin-top: -3.5rem;
+      position: relative;
+      z-index: 10;
+      padding: 0 0 3rem 0;
+    }
+
+    .trust-grid {
+      background: var(--color-background);
+      border: 1px solid var(--color-border);
+      border-radius: var(--border-radius);
+      box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.05);
+      padding: 2.5rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2.5rem;
+    }
+
+    .trust-card {
+      display: flex;
+      gap: 1.25rem;
+    }
+
+    .trust-card-icon {
+      flex-shrink: 0;
+      color: var(--color-secondary);
+      margin-top: 0.25rem;
+    }
+
+    .trust-card-body h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      color: var(--color-primary);
+    }
+
+    .trust-card-body p {
+      font-size: 0.9rem;
+      margin-bottom: 0;
+      line-height: 1.5;
+    }
+
+    
+    /* ── CLIENT STRIP ── */
+    .client-strip {
+      background-color: var(--color-light);
+      border-bottom: 1px solid var(--color-border);
+      padding: 2.5rem 0;
+      text-align: center;
+    }
+    .client-strip h4 {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--color-text-muted);
+      margin-bottom: 1.25rem;
+    }
+    .client-logos {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 2.5rem;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+    .client-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #64748B;
+      fill: currentColor;
+      font-weight: 600;
+      font-size: 1.1rem;
+      opacity: 0.7;
+      transition: all 0.25s ease;
+      text-decoration: none;
+    }
+    .client-logo:hover {
+      opacity: 1;
+      color: var(--color-secondary);
+    }
+    .client-logo svg {
+      opacity: 0.8;
+    }
+
+    /* ── STATS SECTION ── */
+    .stats-section {
+      padding: 5rem 0;
+      background-color: var(--color-primary);
+      color: #ffffff;
+      text-align: center;
+      border-top: 1px solid #1E293B;
+      border-bottom: 1px solid #1E293B;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2.5rem;
+    }
+    .stat-card h3 {
+      font-size: 3.25rem;
+      font-weight: 800;
+      color: #38BDF8; /* Sky 400 */
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.02em;
+    }
+    .stat-card p {
+      font-size: 0.95rem;
+      color: #94A3B8;
+      margin-bottom: 0;
+      font-weight: 500;
+    }
+
+    /* ── COMPLIANCE & CERTIFICATIONS ── */
+    .compliance-strip {
+      background-color: var(--color-background);
+      border-bottom: 1px solid var(--color-border);
+      padding: 3rem 0;
+    }
+    .compliance-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+    .compliance-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1.5rem;
+      background-color: var(--color-light);
+      border: 1px solid var(--color-border);
+      border-radius: var(--border-radius);
+    }
+    .compliance-card svg {
+      color: var(--color-secondary);
+      flex-shrink: 0;
+    }
+    .compliance-card h4 {
+      font-size: 1rem;
+      color: var(--color-primary);
+      margin-bottom: 0.25rem;
+    }
+    .compliance-card p {
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+      margin-bottom: 0;
+      line-height: 1.45;
+    }
+
+    /* ── TESTIMONIAL ── */
+    .testimonial-section {
+      padding: 6rem 0;
+      background-color: var(--color-light);
+      border-top: 1px solid var(--color-border);
+      border-bottom: 1px solid var(--color-border);
+    }
+    .testimonial-card {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      background: var(--color-background);
+      border: 1px solid var(--color-border);
+      border-radius: var(--border-radius);
+      padding: 3.5rem 3rem;
+      box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.04);
+      position: relative;
+    }
+    .testimonial-card::before {
+      content: "“";
+      position: absolute;
+      top: 1.5rem;
+      left: 2.5rem;
+      font-size: 8rem;
+      color: var(--color-border);
+      font-family: serif;
+      line-height: 1;
+      height: 40px;
+      pointer-events: none;
+    }
+    .testimonial-text {
+      font-size: 1.2rem;
+      font-style: italic;
+      color: var(--color-text);
+      line-height: 1.8;
+      margin-bottom: 2rem;
+      position: relative;
+      z-index: 2;
+    }
+    .testimonial-author {
+      font-weight: 700;
+      color: var(--color-primary);
+      font-size: 1rem;
+    }
+    .testimonial-author span {
+      font-weight: 500;
+      color: var(--color-text-muted);
+      font-size: 0.875rem;
+      display: block;
+      margin-top: 0.25rem;
+    }
+
+    /* -------------------------------------------------------------
+       6. ABOUT SECTION (WHO WE ARE)
+       ------------------------------------------------------------- */
+    .about-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .about-text h2 {
+      margin-bottom: 1.5rem;
+    }
+
+    .about-text p {
+      font-size: 1.05rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .about-highlights {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+
+    .highlight-card {
+      background: var(--color-light);
+      border: 1px solid var(--color-border);
+      border-radius: var(--border-radius);
+      padding: 1.75rem;
+      transition: var(--transition-base);
+    }
+
+    .highlight-card:hover {
+      background: var(--color-background);
+      border-color: var(--color-secondary);
+      box-shadow: var(--box-shadow);
+      transform: translateY(-2px);
+    }
+
+    .highlight-card h4 {
+      font-size: 1.05rem;
+      color: var(--color-primary);
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .highlight-card p {
+      font-size: 0.875rem;
+      margin-bottom: 0;
+      line-height: 1.5;
+    }
+
+    /* -------------------------------------------------------------
+       7. SERVICES SECTION
+       ------------------------------------------------------------- */
+    .services-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .service-card {
+      height: 100%;
+    }
+
+    .service-card p {
+      font-size: 0.925rem;
+      line-height: 1.6;
+      margin-bottom: 0;
+    }
+
+    .tech-stack-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin-top: 1.25rem;
+      border-top: 1px solid var(--color-border);
+      padding-top: 1rem;
+    }
+
+    .tech-badge {
+      font-size: 0.725rem;
+      font-weight: 600;
+      color: var(--color-primary);
+      background-color: var(--color-light);
+      border: 1px solid var(--color-border);
+      padding: 0.15rem 0.45rem;
+      border-radius: 4px;
+    }
+
+    /* -------------------------------------------------------------
+       8. APPLICATIONS SECTION
+       ------------------------------------------------------------- */
+    .applications-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .app-card {
+      background: var(--color-background);
+      border: 2px solid var(--color-border);
+      transition: var(--transition-base);
+    }
+
+    .app-card:hover {
+      border-color: var(--color-secondary);
+    }
+
+    .app-badge {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--color-secondary);
+      background-color: rgba(37, 99, 235, 0.08);
+      border-radius: 50px;
+      margin-bottom: 1rem;
+      align-self: flex-start;
+    }
+
+    .app-card h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .app-features {
+      list-style: none;
+      margin: 1.5rem 0 2rem 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      flex-grow: 1;
+    }
+
+    .app-features li {
+      font-size: 0.9rem;
+      color: var(--color-text);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .app-features svg {
+      color: #10B981; /* Success Green */
+      flex-shrink: 0;
+    }
+
+    .app-card .btn {
+      width: 100%;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    /* -------------------------------------------------------------
+       9. LEARN TAMIL ONLINE SECTION
+       ------------------------------------------------------------- */
+    .tamil-banner {
+      background: var(--color-primary);
+      color: #ffffff;
+      border-radius: var(--border-radius);
+      padding: 4rem;
+      box-shadow: var(--box-shadow);
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .tamil-content h2 {
+      color: #ffffff;
+      margin-bottom: 1.5rem;
+    }
+
+    .tamil-content p {
+      color: #94A3B8; /* Slate 400 */
+      font-size: 1.05rem;
+      margin-bottom: 2rem;
+    }
+
+    .tamil-badge {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #38BDF8; /* Sky 400 */
+      background-color: rgba(56, 189, 248, 0.1);
+      border: 1px solid rgba(56, 189, 248, 0.2);
+      border-radius: 50px;
+      margin-bottom: 1rem;
+    }
+
+    .tamil-features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+
+    .tamil-feature-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+
+    .tamil-feature-icon {
+      color: #38BDF8;
+      flex-shrink: 0;
+      margin-top: 0.15rem;
+    }
+
+    .tamil-feature-text h4 {
+      color: #ffffff;
+      font-size: 1rem;
+      margin-bottom: 0.25rem;
+      font-weight: 600;
+    }
+
+    .tamil-feature-text p {
+      color: #94A3B8;
+      font-size: 0.85rem;
+      margin-bottom: 0;
+      line-height: 1.4;
+    }
+
+    /* -------------------------------------------------------------
+       10. WHY CHOOSE US
+       ------------------------------------------------------------- */
+    .choose-grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .choose-card {
+      border-left: 3px solid var(--color-secondary);
+      border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    }
+
+    .choose-card h3 {
+      font-size: 1.15rem;
+      color: var(--color-primary);
+      margin-bottom: 0.75rem;
+    }
+
+    .choose-card p {
+      font-size: 0.9rem;
+      margin-bottom: 0;
+      line-height: 1.6;
+    }
+
+    /* -------------------------------------------------------------
+       11. CONTACT SECTION
+       ------------------------------------------------------------- */
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 4rem;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .contact-info-top h2 {
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-info-top p {
+      font-size: 1.05rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .contact-details {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .contact-item {
+      display: flex;
+      gap: 1.25rem;
+    }
+
+    .contact-icon {
+      color: var(--color-secondary);
+      flex-shrink: 0;
+      margin-top: 0.25rem;
+    }
+
+    .contact-text h4 {
+      font-size: 1rem;
+      margin-bottom: 0.25rem;
+      color: var(--color-primary);
+    }
+
+    .contact-text p {
+      font-size: 0.95rem;
+      color: var(--color-text-muted);
+      margin-bottom: 0;
+      white-space: pre-line;
+    }
+
+    .contact-badge {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.2rem 0.5rem;
+      background-color: var(--color-light);
+      border: 1px solid var(--color-border);
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--color-primary);
+    }
+
+    /* Google Maps placeholder container */
+    .map-container {
+      background-color: var(--color-light);
+      border: 1px solid var(--color-border);
+      border-radius: var(--border-radius);
+      height: 100%;
+      min-height: 380px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .map-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.15;
+      background-image: 
+        radial-gradient(var(--color-text-muted) 1px, transparent 1px), 
+        radial-gradient(var(--color-text-muted) 1px, transparent 1px);
+      background-size: 20px 20px;
+      background-position: 0 0, 10px 10px;
+      z-index: 1;
+    }
+
+    .map-placeholder-box {
+      position: relative;
+      z-index: 2;
+      background: var(--color-background);
+      border: 1px solid var(--color-border);
+      border-radius: var(--border-radius);
+      padding: 2.5rem 2rem;
+      box-shadow: var(--box-shadow);
+      max-width: 360px;
+    }
+
+    .map-placeholder-icon {
+      color: #EF4444; /* Alert Red Pin */
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .map-placeholder-box h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .map-placeholder-box p {
+      font-size: 0.85rem;
+      margin-bottom: 1.5rem;
+      color: var(--color-text-muted);
+    }
+
+    .map-placeholder-box .btn {
+      font-size: 0.85rem;
+      padding: 0.6rem 1.25rem;
+    }
+
+    /* -------------------------------------------------------------
+       12. FOOTER SECTION
+       ------------------------------------------------------------- */
+    .footer {
+      background-color: var(--color-primary);
+      color: #ffffff;
+      padding: 5rem 0 2rem 0;
+      border-top: 1px solid #1E293B;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr 0.8fr 1.2fr;
+      gap: 3rem;
+      margin-bottom: 4rem;
+    }
+
+    .footer-col h3 {
+      color: #ffffff;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+    }
+
+    .footer-col p {
+      color: #94A3B8;
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
+    .footer-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-links li {
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-links a {
+      color: #94A3B8;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: var(--transition-base);
+    }
+
+    .footer-links a:hover {
+      color: #ffffff;
+      padding-left: 2px;
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      margin-bottom: 1rem;
+    }
+
+    .footer-logo-text {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .footer-address {
+      font-style: normal;
+      color: #94A3B8;
+      font-size: 0.875rem;
+      line-height: 1.6;
+    }
+
+    .footer-address strong {
+      color: #ffffff;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #1E293B;
+      padding-top: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-copyright {
+      color: #64748B;
+      font-size: 0.875rem;
+      margin-bottom: 0;
+    }
+
+    .footer-legal-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .footer-legal-links a {
+      color: #64748B;
+      text-decoration: none;
+      font-size: 0.875rem;
+      transition: var(--transition-base);
+    }
+
+    .footer-legal-links a:hover {
+      color: #ffffff;
+    }
+
+    /* -------------------------------------------------------------
+       13. RESPONSIVE MEDIA QUERIES
+       ------------------------------------------------------------- */
+    @media (max-width: 1024px) {
+      h1 { font-size: 2.25rem; }
+      .grid-3 { grid-template-columns: repeat(2, 1fr); }
+      .grid-4 { grid-template-columns: repeat(2, 1fr); }
+      .about-layout { gap: 2.5rem; }
+      .contact-layout { gap: 2.5rem; }
+      .footer-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 1080px) {
+            .menu-toggle {
+        display: block;
+        z-index: 1001;
+      }
+      
+      .nav-menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 300px;
+        max-width: 85vw;
+        height: 100vh;
+        background-color: var(--color-background);
+        border-left: 1px solid var(--color-border);
+        padding: 5.5rem 2rem 2.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        box-shadow: -8px 0 25px -5px rgba(15, 23, 42, 0.08);
+        z-index: 999;
+        transform: translateX(100%);
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        overflow-y: auto;
+      }
+
+      .nav-menu.active {
+        display: flex;
+        transform: translateX(0);
+      }
+
+      .nav-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(15, 23, 42, 0.45);
+        backdrop-filter: blur(4px);
+        z-index: 998;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.35s ease, visibility 0.35s ease;
+      }
+
+      .nav-overlay.active {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .nav-link {
+        width: 100%;
+        padding: 0.5rem 0;
+        font-size: 1rem;
+      }
+
+      .nav-link:hover, .nav-link.active {
+        border-bottom-color: transparent;
+        color: var(--color-secondary);
+        padding-left: 0.5rem;
+      }
+
+      .legal-nav-links-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        width: 100%;
+        border-top: 1px solid var(--color-border);
+        padding-top: 1.25rem;
+        margin-top: 0.5rem;
+      }
+
+              .nav-btn {
+      margin-left: 0.5rem;
+      padding: 0.55rem 1.25rem;
+      font-size: 0.875rem;
+      background-color: var(--color-secondary);
+      color: #ffffff;
+      border-radius: var(--border-radius);
+      text-decoration: none;
+      font-weight: 600;
+      transition: var(--transition-base);
+      border: 1px solid var(--color-secondary);
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+      .nav-dropdown { width: 100%; flex-direction: column; align-items: flex-start; }
+      .nav-dropdown-btn { width: 100%; padding: .45rem 0; font-size: .95rem; border-bottom-color: transparent !important; justify-content: space-between; }
+      .nav-dropdown-btn:hover { color: var(--color-secondary); padding-left: .4rem; }
+      .nav-dropdown-menu { position: static; width: 100%; box-shadow: none; border-radius: 0; border: none; border-left: 2px solid var(--color-border); margin-top: .25rem; padding: .25rem 0 .25rem .75rem; background: transparent; }
+      .nav-dropdown-item { padding: .4rem .5rem; font-size: .9rem; }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+      }
+
+      .hero-buttons {
+        justify-content: center;
+      }
+
+      .trust-grid {
+        grid-template-columns: 1fr;
+        gap: 1.75rem;
+        padding: 2rem;
+      }
+
+      .about-layout {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+
+      .tamil-banner {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        padding: 3rem 2rem;
+      }
+
+      .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.75rem;
+      }
+      .compliance-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .trust-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .section { padding: 3.5rem 0; }
+      h1 { font-size: 1.85rem; }
+      h2 { font-size: 1.5rem; }
+      .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+      .stats-grid { grid-template-columns: 1fr; }
+      .about-highlights { grid-template-columns: 1fr; }
+      .tamil-features { grid-template-columns: 1fr; }
+      .hero-buttons { flex-direction: column; width: 100%; gap: 1rem; }
+      .btn { width: 100%; }
+      .btn-secondary { margin-left: 0; }
+      .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; }
+      .footer-legal-links { flex-direction: column; gap: 0.75rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo" aria-label="GrindQ Technologies Logo Home"><span class="logo-text">GrindQ Technologies</span>
+      </a>
+      
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle Navigation Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="4" y1="6" x2="20" y2="6"></line>
+          <line x1="4" y1="12" x2="20" y2="12"></line>
+          <line x1="4" y1="18" x2="20" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="nav-overlay" id="navOverlay"></div>
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="applications.html" class="nav-link">Applications</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-btn" id="policiesBtn" aria-haspopup="true" aria-expanded="false">Policies <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="nav-dropdown-menu" id="policiesMenu">
+            <a href="privacy-policy.html" class="nav-dropdown-item">Privacy Policy</a>
+            <a href="terms.html" class="nav-dropdown-item">Terms &amp; Conditions</a>
+            <a href="refund-policy.html" class="nav-dropdown-item">Refund Policy</a>
+          </div>
+        </div>
+        <a href="contact.html" class="nav-btn">Contact Us <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 6px; transition: transform 0.2s;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <h1>Enterprise Software Solutions &amp; Global Technology Integration</h1>
+            <p>GrindQ Technologies LLP engineers high-performance, compliant software platforms, enterprise ERP systems, secure cloud architectures, and digital learning portals for global industries.</p>
+            <div class="hero-buttons">
+              <a href="#applications" class="btn btn-primary">Explore Applications</a>
+              <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+            </div>
+          </div>
+          <div class="hero-illustration" aria-hidden="true">
+            <!-- Custom HTML/CSS/SVG Geometric Corporate Illustration -->
+            <svg width="450" height="380" viewBox="0 0 450 380" fill="none" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(0 10px 20px rgba(15,23,42,0.03));">
+              <!-- Grid background pattern -->
+              <defs>
+                <pattern id="hero-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+                  <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#F1F5F9" stroke-width="1.5"/>
+                </pattern>
+              </defs>
+              <rect width="450" height="380" rx="10" fill="#FFFFFF"/>
+              <rect width="450" height="380" rx="10" fill="url(#hero-grid)"/>
+
+              <!-- Central abstract networking framework -->
+              <!-- Connecting lines -->
+              <path d="M120 250 L220 160" stroke="#E2E8F0" stroke-width="3" stroke-dasharray="4 4"/>
+              <path d="M330 250 L220 160" stroke="#E2E8F0" stroke-width="3" stroke-dasharray="4 4"/>
+              <path d="M220 160 L220 80" stroke="#E2E8F0" stroke-width="3"/>
+              <path d="M120 250 L220 280" stroke="#E2E8F0" stroke-width="2"/>
+              <path d="M330 250 L220 280" stroke="#E2E8F0" stroke-width="2"/>
+
+              <!-- Node 1: Cloud/Server Infrastructure (Top) -->
+              <g transform="translate(195, 55)">
+                <rect x="0" y="0" width="50" height="50" rx="8" fill="#0F172A" />
+                <path d="M17 22H33M17 28H33M20 16H30" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+                <circle cx="15" cy="22" r="1.5" fill="#38BDF8"/>
+                <circle cx="15" cy="28" r="1.5" fill="#38BDF8"/>
+              </g>
+
+              <!-- Node 2: Mobile App Development (Left) -->
+              <g transform="translate(90, 220)">
+                <rect x="0" y="0" width="60" height="60" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="2"/>
+                <rect x="15" y="10" width="30" height="40" rx="4" fill="#0F172A"/>
+                <!-- Mobile UI element -->
+                <rect x="22" y="15" width="16" height="4" rx="1" fill="#2563EB"/>
+                <circle cx="30" cy="44" r="2" fill="#FFFFFF"/>
+              </g>
+
+              <!-- Node 3: Learning / Web App (Right) -->
+              <g transform="translate(300, 220)">
+                <rect x="0" y="0" width="60" height="60" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="2"/>
+                <!-- Graduation cap/book vector representation -->
+                <path d="M18 24 L30 18 L42 24 L30 30 Z" fill="#2563EB"/>
+                <path d="M22 26V34C22 36 30 38 30 38C30 38 38 36 38 34V26" stroke="#2563EB" stroke-width="2" stroke-linecap="round" fill="none"/>
+                <path d="M40 25V33" stroke="#2563EB" stroke-width="2" stroke-linecap="round"/>
+              </g>
+
+              <!-- Center Hub: Application Publishing / Distribution -->
+              <g transform="translate(195, 135)">
+                <rect x="0" y="0" width="50" height="50" rx="25" fill="#2563EB"/>
+                <!-- Globe / publishing network icon -->
+                <circle cx="25" cy="25" r="12" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+                <path d="M25 13V37M13 25H37" stroke="#FFFFFF" stroke-width="1.5"/>
+              </g>
+
+              <!-- Interactive Dashboard Element (Base block) -->
+              <g transform="translate(150, 290)">
+                <rect x="0" y="0" width="140" height="45" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+                <!-- Mini bar chart representing performance and metrics -->
+                <rect x="20" y="25" width="12" height="12" rx="2" fill="#94A3B8"/>
+                <rect x="38" y="17" width="12" height="20" rx="2" fill="#2563EB"/>
+                <rect x="56" y="21" width="12" height="16" rx="2" fill="#0F172A"/>
+                <rect x="74" y="12" width="12" height="25" rx="2" fill="#2563EB"/>
+                
+                <!-- Custom status checkmark -->
+                <circle cx="112" cy="22" r="8" fill="#10B981"/>
+                <path d="M109 22L111 24L115 20" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+
+              <!-- Floating Tech Badges -->
+              <g transform="translate(50, 80)">
+                <rect x="0" y="0" width="80" height="26" rx="13" fill="#F1F5F9"/>
+                <text x="40" y="17" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#475569" text-anchor="middle">MCA COMPLIANT</text>
+              </g>
+              <g transform="translate(320, 90)">
+                <rect x="0" y="0" width="75" height="26" rx="13" fill="#EFF6FF"/>
+                <text x="37.5" y="17" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#2563EB" text-anchor="middle">IT SERVICES</text>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST SECTION -->
+    <section class="trust-section">
+      <div class="container">
+        <div class="trust-grid">
+          <!-- Card 1: Registered LLP -->
+          <div class="trust-card">
+            <div class="trust-card-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <div class="trust-card-body">
+              <h3>Registered LLP Company</h3>
+              <p>Legally registered corporate entity in India complying with MCA regulations.</p>
+            </div>
+          </div>
+          
+          <!-- Card 2: IT Services -->
+          <div class="trust-card">
+            <div class="trust-card-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+            </div>
+            <div class="trust-card-body">
+              <h3>IT Services Provider</h3>
+              <p>Reliable software engineering, consultation, and cloud operations.</p>
+            </div>
+          </div>
+
+          <!-- Card 3: Application Publishing -->
+          <div class="trust-card">
+            <div class="trust-card-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+            </div>
+            <div class="trust-card-body">
+              <h3>Application Publishing</h3>
+              <p>Global app store compliance, product distribution, and licensing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- CLIENT STRIP -->
+    <section class="client-strip">
+      <div class="container">
+        <h4>Trusted by Enterprises &amp; Scaling Brands</h4>
+        <div class="client-logos">
+          <div class="client-logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20M5 17V5a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v12M9 22V12h6v10"/></svg>
+            Vertex Logistics
+          </div>
+          <div class="client-logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            Apex Healthcare
+          </div>
+          <div class="client-logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            EduSphere Labs
+          </div>
+          <div class="client-logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+            Omni Retail Group
+          </div>
+          <div class="client-logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01"/></svg>
+            Vanguard FinTech
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- WHO WE ARE SECTION (ABOUT) -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about-layout">
+          <div class="about-text">
+            <span style="color: var(--color-secondary); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; display: block; margin-bottom: 0.5rem;">Corporate Profile</span>
+            <h2>Who We Are</h2>
+            <p>GrindQ Technologies LLP is an India-based IT services company focused on delivering software solutions, developing digital products, publishing mobile applications, and operating educational technology initiatives.</p>
+            <p>Our focus is to deliver stable, high-availability platforms, clean codebases, and robust customer support. We are structured to assist businesses in transition and scale digital learning platforms worldwide.</p>
+            <a href="about.html" class="btn btn-primary" style="margin-top: 1rem;">Read Company Overview</a>
+          </div>
+          <div class="about-highlights">
+            <!-- Highlight 1: IT Services -->
+            <div class="highlight-card">
+              <h4>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-secondary);">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+                IT Services
+              </h4>
+              <p>Providing specialized engineering, custom APIs, and backend architecture.</p>
+            </div>
+
+            <!-- Highlight 2: Application Development -->
+            <div class="highlight-card">
+              <h4>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-secondary);">
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                  <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                </svg>
+                App Development
+              </h4>
+              <p>Constructing high-performance iOS, Android, and Web applications.</p>
+            </div>
+
+            <!-- Highlight 3: App Publishing -->
+            <div class="highlight-card">
+              <h4>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-secondary);">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="17 8 12 3 7 8"></polyline>
+                  <line x1="12" y1="3" x2="12" y2="15"></line>
+                </svg>
+                App Publishing
+              </h4>
+              <p>Managing licenses, platform compliances, and localized app listings.</p>
+            </div>
+
+            <!-- Highlight 4: Digital Learning -->
+            <div class="highlight-card">
+              <h4>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-secondary);">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+                Digital Learning
+              </h4>
+              <p>Operating Tamil education and localized learning portals globally.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="section section-light" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="tag">Our Expertise</span>
+          <h2>Comprehensive Software Solutions</h2>
+          <p>We deliver reliable custom software, enterprise systems, and localized platforms configured across industry-standard technology stacks.</p>
+        </div>
+        <div class="grid grid-3 services-grid">
+          <!-- Solution 1: Web Development -->
+          <div class="card service-card">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3>Web Development</h3>
+            <p>Custom full-stack web applications, e-commerce engines, SaaS portals, and responsive content management systems built for corporate scalability and security.</p>
+            <div class="tech-stack-list">
+              <span class="tech-badge">React</span>
+              <span class="tech-badge">Next.js</span>
+              <span class="tech-badge">Node.js</span>
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Laravel</span>
+              <span class="tech-badge">PostgreSQL</span>
+            </div>
+          </div>
+
+          <!-- Solution 2: Mobile App Development -->
+          <div class="card service-card">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+              </svg>
+            </div>
+            <h3>App Development</h3>
+            <p>Native and cross-platform mobile application engineering for iOS and Android, focusing on secure data sync, offline operations, and high performance.</p>
+            <div class="tech-stack-list">
+              <span class="tech-badge">Flutter</span>
+              <span class="tech-badge">React Native</span>
+              <span class="tech-badge">Swift</span>
+              <span class="tech-badge">Kotlin</span>
+              <span class="tech-badge">REST API</span>
+              <span class="tech-badge">GraphQL</span>
+            </div>
+          </div>
+
+          <!-- Solution 3: CRM & ERP Softwares -->
+          <div class="card service-card">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="9" y1="3" x2="9" y2="21"></line>
+                <line x1="15" y1="3" x2="15" y2="21"></line>
+                <line x1="3" y1="9" x2="21" y2="9"></line>
+                <line x1="3" y1="15" x2="21" y2="15"></line>
+              </svg>
+            </div>
+            <h3>CRM &amp; ERP Softwares</h3>
+            <p>Enterprise planning systems, client relationship management databases, inventory ledger automation, and dashboard reporting customized to corporate workflows.</p>
+            <div class="tech-stack-list">
+              <span class="tech-badge">C# / .NET</span>
+              <span class="tech-badge">Java / Spring</span>
+              <span class="tech-badge">SAP APIs</span>
+              <span class="tech-badge">Salesforce</span>
+              <span class="tech-badge">SQL Server</span>
+            </div>
+          </div>
+
+          <!-- Solution 4: Cloud & DevOps Solutions -->
+          <div class="card service-card">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+            </div>
+            <h3>Cloud &amp; DevOps</h3>
+            <p>Secure cloud migrations, automated CI/CD deployments, infrastructure as code (IaC), container orchestration, and continuous high-availability service monitoring.</p>
+            <div class="tech-stack-list">
+              <span class="tech-badge">AWS</span>
+              <span class="tech-badge">Google Cloud</span>
+              <span class="tech-badge">Docker</span>
+              <span class="tech-badge">Kubernetes</span>
+              <span class="tech-badge">Terraform</span>
+              <span class="tech-badge">CI/CD</span>
+            </div>
+          </div>
+
+          <!-- Solution 5: AI & Business Intelligence -->
+          <div class="card service-card">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="1" x2="12" y2="23"></line>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
+            <h3>AI &amp; Data Analytics</h3>
+            <p>Integrating pre-trained AI models, creating custom metric reporting dashboards, building analytics engines, and automating data processing protocols.</p>
+            <div class="tech-stack-list">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">TensorFlow</span>
+              <span class="tech-badge">PyTorch</span>
+              <span class="tech-badge">Pandas</span>
+              <span class="tech-badge">PowerBI</span>
+              <span class="tech-badge">Tableau</span>
+            </div>
+          </div>
+
+          <!-- Solution 6: Custom Integrations & APIs -->
+          <div class="card service-card">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+              </svg>
+            </div>
+            <h3>Custom API &amp; Software</h3>
+            <p>Bespoke system software development, corporate databases, automation scripts, and secure API bridges connecting modern systems to legacy databases.</p>
+            <div class="tech-stack-list">
+              <span class="tech-badge">C++</span>
+              <span class="tech-badge">Java</span>
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Go Lang</span>
+              <span class="tech-badge">RESTful APIs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- STATS SECTION -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <h3>50+</h3>
+            <p>Enterprise Deployments</p>
+          </div>
+          <div class="stat-card">
+            <h3>5M+</h3>
+            <p>Global End-Users</p>
+          </div>
+          <div class="stat-card">
+            <h3>99.9%</h3>
+            <p>Core Service SLA</p>
+          </div>
+          <div class="stat-card">
+            <h3>24/7</h3>
+            <p>Priority Corporate Support</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPLIANCE & CERTIFICATIONS -->
+    <section class="compliance-strip">
+      <div class="container">
+        <div class="compliance-grid">
+          <div class="compliance-card">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <div>
+              <h4>MCA Compliant Entity</h4>
+              <p>Legally registered Limited Liability Partnership in India with full MCA corporate governance.</p>
+            </div>
+          </div>
+          <div class="compliance-card">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            <div>
+              <h4>ISO 9001 Alignment</h4>
+              <p>Following industry-standard software engineering and system design lifecycle paradigms.</p>
+            </div>
+          </div>
+          <div class="compliance-card">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            <div>
+              <h4>ISO 27001 Security Practice</h4>
+              <p>Implementing data encryption, secure APIs, and periodic compliance vulnerability scans.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPLICATIONS SECTION -->
+    <section class="section" id="applications">
+      <div class="container">
+        <div class="section-header">
+          <span class="tag">Our Products</span>
+          <h2>Published Applications</h2>
+          <p>Explore software products published and maintained by GrindQ Technologies LLP, serving educational, language, and productivity segments.</p>
+        </div>
+        <div class="grid grid-3 applications-grid">
+          <!-- App 1: SSC Ranker Up -->
+          <div class="card app-card">
+            <span class="app-badge">Education / Prep</span>
+            <h3>SSC Ranker Up</h3>
+            <p>A comprehensive preparation application for SSC examinations, helping students track their performance, study syllabus, and rank higher.</p>
+            <ul class="app-features">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Full-Length Mock Tests
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Performance Analytics &amp; Rankings
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Subject-wise Practice Sets
+              </li>
+            </ul>
+            <a href="contact.html" class="btn btn-secondary">Learn More</a>
+          </div>
+
+          <!-- App 2: HappyFlow -->
+          <div class="card app-card">
+            <span class="app-badge">Productivity / Utility</span>
+            <h3>HappyFlow</h3>
+            <p>A productivity and workflow management tool designed to streamline daily tasks, collaboration, and team-based project workflows.</p>
+            <ul class="app-features">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Visual Kanban Task Boards
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Team Collaboration Hub
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Automated Workflow Triggers
+              </li>
+            </ul>
+            <a href="contact.html" class="btn btn-secondary">Learn More</a>
+          </div>
+
+          <!-- App 3: Tamil Learning App -->
+          <div class="card app-card">
+            <span class="app-badge">Language / EdTech</span>
+            <h3>Tamil Learning App</h3>
+            <p>An interactive mobile application designed to help users learn the Tamil language from scratch using engaging lessons, audio guides, and tests.</p>
+            <ul class="app-features">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Interactive Vocabulary Builder
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Speech &amp; Pronunciation Guides
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Gamified Learning Levels
+              </li>
+            </ul>
+            <a href="contact.html" class="btn btn-secondary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEARN TAMIL ONLINE SECTION -->
+    <section class="section section-light" id="learn-tamil">
+      <div class="container">
+        <div class="tamil-banner">
+          <div class="tamil-content">
+            <span class="tamil-badge">Specialized Language Initiative</span>
+            <h2>Learn Tamil Online</h2>
+            <p>Learn Tamil Online provides personalized Tamil language education through structured online classes, one-to-one coaching, group sessions, and guided learning paths suitable for beginners to advanced learners.</p>
+            <a href="contact.html" class="btn btn-accent">Enquire About Classes</a>
+          </div>
+          <div class="tamil-features">
+            <!-- Feature 1 -->
+            <div class="tamil-feature-item">
+              <div class="tamil-feature-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <div class="tamil-feature-text">
+                <h4>Personalized Classes</h4>
+                <p>Curriculums tuned to your native tongue and learning pace.</p>
+              </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="tamil-feature-item">
+              <div class="tamil-feature-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <div class="tamil-feature-text">
+                <h4>Native Tutors</h4>
+                <p>Learn pronunciation and idioms directly from fluent native speakers.</p>
+              </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="tamil-feature-item">
+              <div class="tamil-feature-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div class="tamil-feature-text">
+                <h4>Flexible Timings</h4>
+                <p>Schedule your coaching slots around your active professional day.</p>
+              </div>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="tamil-feature-item">
+              <div class="tamil-feature-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+              </div>
+              <div class="tamil-feature-text">
+                <h4>Structured Curriculum</h4>
+                <p>Standardized learning tracks from alphabets to literature grades.</p>
+              </div>
+            </div>
+
+            <!-- Feature 5 -->
+            <div class="tamil-feature-item">
+              <div class="tamil-feature-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <div class="tamil-feature-text">
+                <h4>One-to-One Sessions</h4>
+                <p>Private classroom environments focusing entirely on your growth.</p>
+              </div>
+            </div>
+
+            <!-- Feature 6 -->
+            <div class="tamil-feature-item">
+              <div class="tamil-feature-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <div class="tamil-feature-text">
+                <h4>Group Classes</h4>
+                <p>Interactive peer classes focusing on spoken conversation exercises.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="section" id="why-choose-us">
+      <div class="container">
+        <div class="section-header">
+          <span class="tag">Why GrindQ</span>
+          <h2>Built for Quality &amp; Trustworthiness</h2>
+          <p>We approach software development and edtech services with engineering discipline, compliance integrity, and client commitment.</p>
+        </div>
+        <div class="grid grid-3 choose-grid">
+          <!-- Item 1 -->
+          <div class="card choose-card">
+            <h3>Professional Development</h3>
+            <p>Following industry-standard lifecycle paradigms, strict code audits, and maintaining secure, well-structured architectures.</p>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="card choose-card">
+            <h3>Reliable Support</h3>
+            <p>Clear SLAs and systematic tracking of support calls, helping ensure stable operations and minimal system downtime.</p>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="card choose-card">
+            <h3>Quality Delivery</h3>
+            <p>Comprehensive unit tests, integration validation, and user acceptance phases implemented prior to code deployment.</p>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="card choose-card">
+            <h3>Long-Term Maintenance</h3>
+            <p>Committed app store lifecycle management, system updates, dependency upgrades, and periodic security scans.</p>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="card choose-card">
+            <h3>Experienced Team</h3>
+            <p>Our engineers and content creators bring deep expertise across technology frameworks and digital teaching methodologies.</p>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="card choose-card">
+            <h3>Continuous Improvement</h3>
+            <p>Proactive performance optimization and regular application upgrades driven by telemetry and user feedback.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- TESTIMONIAL SECTION -->
+    <section class="testimonial-section">
+      <div class="container">
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            "GrindQ Technologies transformed our dispatch and logistics tracking system with a robust, enterprise-grade cloud architecture. Their adherence to SLAs, secure data APIs, and constant post-deployment maintenance allowed us to automate our inventory ledger with zero disruption."
+          </p>
+          <div class="testimonial-author">
+            Rajesh Krishnan
+            <span>Vice President of Operations, Vertex Logistics</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section section-light" id="contact">
+      <div class="container">
+        <div class="contact-layout">
+          <div class="contact-info">
+            <div class="contact-info-top">
+              <span style="color: var(--color-secondary); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; display: block; margin-bottom: 0.5rem;">Get in Touch</span>
+              <h2>Contact Our Offices</h2>
+              <p>For corporate partnerships, app licensing enquiries, technical support, or learning programs, contact us via email or visit our Coimbatore offices.</p>
+            </div>
+            
+            <div class="contact-details">
+              <!-- Address -->
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="contact-text">
+                  <h4>Registered Office</h4>
+                  <p>GrindQ Technologies LLP
+                  120/3B, Main Road,
+                  Karavalli Madhapur,
+                  Somanur,
+                  Coimbatore,
+                  Tamil Nadu – 641668,
+                  India</p>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-text">
+                  <h4>Email Support</h4>
+                  <p><a href="mailto:support@grindq.com" style="color: var(--color-secondary); text-decoration: none; font-weight: 500;">support@grindq.com</a></p>
+                  <span class="contact-badge">Response time: Within 2 Business Days</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-map">
+            <!-- Professional map placeholder -->
+            <div class="map-container">
+              <div class="map-background" aria-hidden="true"></div>
+              <div class="map-placeholder-box">
+                <div class="map-placeholder-icon" aria-hidden="true">
+                  <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <h3>Somanur, Coimbatore</h3>
+                <p>120/3B, Main Road, Karavalli Madhapur, Coimbatore, Tamil Nadu, 641668, India</p>
+                <a href="https://maps.google.com/?q=GrindQ+Technologies+LLP+Somanur+Coimbatore" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Open in Google Maps</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="grid grid-4 footer-grid">
+        <!-- Col 1: About Brand -->
+        <div class="footer-col">
+          <a href="index.html" class="footer-logo"><span class="footer-logo-text">GrindQ Technologies</span>
+          </a>
+          <p style="margin-bottom: 1.5rem;">Independent IT Services and Application Publishing Company, delivering robust digital products and education platforms.</p>
+          <address class="footer-address">
+            <strong>Registered Office:</strong><br>
+            120/3B, Main Road,<br>
+            Karavalli Madhapur, Somanur,<br>
+            Coimbatore, TN – 641668, India
+          </address>
+        </div>
+
+        <!-- Col 2: Applications -->
+        <div class="footer-col">
+          <h3>Applications</h3>
+          <ul class="footer-links">
+            <li><a href="applications.html#ssc-ranker-up">SSC Ranker Up</a></li>
+            <li><a href="applications.html#happyflow">HappyFlow</a></li>
+            <li><a href="applications.html#tamil-learning-app">Learn Tamil Online</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Company / Directory -->
+        <div class="footer-col">
+          <h3>Company</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Legal & Contact -->
+        <div class="footer-col">
+          <h3>Legal &amp; Support</h3>
+          <ul class="footer-links">
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+            <li><a href="refund-policy.html">Refund Policy</a></li>
+            <li style="margin-top: 1rem; color: #94A3B8; font-size: 0.85rem;">
+              Support Email:<br>
+              <a href="mailto:support@grindq.com" style="color: #ffffff; font-weight: 500;">support@grindq.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2026 GrindQ Technologies LLP. All Rights Reserved.</p>
+        <div class="footer-legal-links">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+          <a href="refund-policy.html">Refund Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Menu Toggle JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+            // Hamburger Menu Drawer Toggle
+      const menuToggle = document.getElementById('menuToggle');
+      const navMenu = document.getElementById('navMenu');
+      const navOverlay = document.getElementById('navOverlay');
+      
+      if (menuToggle && navMenu) {
+        function toggleMenu() {
+          const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+          const newExpanded = !isExpanded;
+          menuToggle.setAttribute('aria-expanded', newExpanded);
+          navMenu.classList.toggle('active');
+          if (navOverlay) {
+            navOverlay.classList.toggle('active');
+          }
+          document.body.style.overflow = newExpanded ? 'hidden' : '';
+        }
+
+        menuToggle.addEventListener('click', toggleMenu);
+        if (navOverlay) {
+          navOverlay.addEventListener('click', toggleMenu);
+        }
+
+        const navLinks = navMenu.querySelectorAll('.nav-link, .nav-dropdown-item, .nav-btn');
+        navLinks.forEach(link => {
+          link.addEventListener('click', function() {
+            menuToggle.setAttribute('aria-expanded', 'false');
+            navMenu.classList.remove('active');
+            if (navOverlay) {
+              navOverlay.classList.remove('active');
+            }
+            document.body.style.overflow = '';
+          });
+        });
+      }
+
+      // Policies dropdown
+      const polBtn = document.getElementById('policiesBtn');
+      const polMenu = document.getElementById('policiesMenu');
+      if (polBtn && polMenu) {
+        polBtn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          const show = polMenu.classList.toggle('show');
+          polBtn.setAttribute('aria-expanded', show);
+        });
+        document.addEventListener('click', function(e) {
+          if (!polBtn.contains(e.target)) {
+            polMenu.classList.remove('show');
+            polBtn.setAttribute('aria-expanded', 'false');
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="GrindQ Technologies LLP offers comprehensive software services including web development, mobile app development, CRM, ERP, Cloud, AI solutions and more across all major technology stacks.">
+  <meta name="keywords"
+    content="GrindQ Services, Web Development India, App Development, CRM ERP Software, Cloud DevOps, AI Analytics, React Next.js Flutter .NET Java Python">
+  <meta name="author" content="GrindQ Technologies LLP">
+  <meta property="og:title" content="Software Services | GrindQ Technologies LLP">
+  <meta property="og:description"
+    content="End-to-end software development services across all major technology stacks — Web, Mobile, CRM, ERP, Cloud, AI and more.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.grindq.com/services.html">
+  <title>Software Services | GrindQ Technologies LLP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* ── DESIGN TOKENS ── */
+    :root {
+      --color-background: #ffffff;
+      --color-primary: #0F172A;
+      --color-secondary: #2563EB;
+      --color-bg: #FFFFFF;
+      --color-light: #F8FAFC;
+      --color-border: #E5E7EB;
+      --color-text: #111827;
+      --color-muted: #6B7280;
+      --font: 'Inter', -apple-system, 'Segoe UI', Arial, sans-serif;
+      --radius: 10px;
+      --shadow: 0 4px 6px -1px rgba(15, 23, 42, .05), 0 2px 4px -1px rgba(15, 23, 42, .03);
+      --shadow-hover: 0 10px 15px -3px rgba(15, 23, 42, .08), 0 4px 6px -2px rgba(15, 23, 42, .05);
+      --transition: all .22s ease;
+    
+      --border-radius: 10px;
+      --transition-base: all 0.25s ease;
+      --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --color-text-muted: #6B7280;}
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font);
+      background: var(--color-bg);
+      color: var(--color-text);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img,
+    svg {
+      vertical-align: middle;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    /* ── TYPOGRAPHY ── */
+    h1,
+    h2,
+    h3,
+    h4 {
+      color: var(--color-primary);
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: .75rem;
+    }
+
+    h1 {
+      font-size: 2.6rem;
+      letter-spacing: -.025em;
+    }
+
+    h2 {
+      font-size: 1.9rem;
+      letter-spacing: -.02em;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    p {
+      color: var(--color-muted);
+      margin-bottom: 1.15rem;
+    }
+
+    /* ── LAYOUT ── */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .section {
+      padding: 5rem 0;
+    }
+
+    .section-light {
+      background: var(--color-light);
+      border-top: 1px solid var(--color-border);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+        /* ── STICKY HEADER & NAVIGATION ── */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-bottom: 1px solid var(--color-border);
+      backdrop-filter: blur(8px);
+      transition: var(--transition-base);
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+    }
+
+    .logo-text {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      letter-spacing: -0.01em;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+    }
+
+    .nav-link {
+      color: var(--color-text-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: var(--transition-base);
+      padding: 0.5rem 0.25rem;
+      border-bottom: 2px solid transparent;
+      white-space: nowrap;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--color-primary);
+      border-bottom-color: var(--color-secondary);
+    }
+
+    .nav-btn {
+      margin-left: 0.5rem;
+      padding: 0.55rem 1.25rem;
+      font-size: 0.875rem;
+      background-color: var(--color-secondary);
+      color: #ffffff;
+      border-radius: var(--border-radius);
+      text-decoration: none;
+      font-weight: 600;
+      transition: var(--transition-base);
+      border: 1px solid var(--color-secondary);
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .nav-btn:hover {
+      background-color: var(--color-primary);
+      border-color: var(--color-primary);
+      color: #ffffff;
+    }
+
+    .nav-btn:hover svg {
+      transform: translateX(3px);
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--color-primary);
+      padding: 0.5rem;
+    }
+
+    /* ── POLICIES DROPDOWN ── */
+    .nav-dropdown { position: relative; display: flex; align-items: center; }
+    .nav-dropdown-btn { display: flex; align-items: center; gap: .3rem; background: none; border: none; border-bottom: 2px solid transparent; cursor: pointer; color: var(--color-text-muted); font-size: 0.875rem; font-weight: 500; padding: 0.4rem 0.2rem; transition: var(--transition-base); white-space: nowrap; font-family: var(--font-family); line-height: 1; }
+    .nav-dropdown-btn:hover, .nav-dropdown-btn.active { color: var(--color-primary); border-bottom-color: var(--color-secondary); }
+    .nav-dropdown-menu { display: none; position: absolute; top: calc(100% + 10px); right: 0; background: var(--color-background); border: 1px solid var(--color-border); border-radius: var(--border-radius); padding: .5rem; min-width: 215px; box-shadow: 0 8px 20px -4px rgba(15,23,42,.1); z-index: 200; }
+    .nav-dropdown:hover .nav-dropdown-menu { display: block; }
+    .nav-dropdown-menu.show { display: block; }
+    .nav-dropdown-item { display: block; padding: .55rem .9rem; font-size: 0.875rem; color: var(--color-text-muted); text-decoration: none; border-radius: 6px; transition: var(--transition-base); white-space: nowrap; }
+    .nav-dropdown-item:hover { background: var(--color-light); color: var(--color-primary); }
+    .nav-dropdown-item.active { color: var(--color-secondary); font-weight: 600; }
+
+        /* ── SERVICES GRID & CARDS ── */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+    
+    .service-card {
+      background: #ffffff;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      padding: 2.25rem;
+      display: flex;
+      flex-direction: column;
+      transition: var(--transition);
+      box-shadow: var(--shadow);
+    }
+    
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-hover);
+      border-color: rgba(37, 99, 235, 0.35);
+    }
+    
+    .service-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+    
+    .service-card-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 10px;
+      background-color: rgba(37, 99, 235, 0.07);
+      color: var(--color-secondary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    
+    .service-card-number {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--color-border);
+      font-family: monospace;
+    }
+    
+    .service-card h3 {
+      font-size: 1.2rem;
+      color: var(--color-primary);
+      margin-bottom: 0.75rem;
+      font-weight: 700;
+    }
+    
+    .service-card p {
+      font-size: 0.88rem;
+      color: var(--color-muted);
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      flex-grow: 1; /* Aligns card bottom details uniformly */
+    }
+    
+    .service-card-divider {
+      height: 1px;
+      background-color: var(--color-border);
+      margin: 1.25rem 0;
+    }
+    
+    .service-card-section h4 {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--color-primary);
+      margin-bottom: 0.85rem;
+    }
+    
+    .service-card-deliverables {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    
+    .service-card-deliverables li {
+      font-size: 0.82rem;
+      color: var(--color-text);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .service-card-deliverables li svg {
+      color: var(--color-secondary);
+      flex-shrink: 0;
+    }
+    
+    .service-card-tech {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+    
+    .service-card-tech span {
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      background-color: var(--color-light);
+      border: 1px solid var(--color-border);
+      color: var(--color-muted);
+    }
+
+    @media (max-width: 1024px) {
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+      .service-card {
+        padding: 1.75rem;
+      }
+    }
+
+    /* ── PAGE BANNER ── */
+    .page-banner {
+      background: linear-gradient(180deg, #fff 0%, #F8FAFC 100%);
+      padding: 4.5rem 0 3.5rem;
+      border-bottom: 1px solid var(--color-border);
+      text-align: center;
+    }
+
+    .page-banner h1 {
+      margin-bottom: 1rem;
+    }
+
+    .page-banner p {
+      font-size: 1.1rem;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .tag {
+      font-size: .8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      color: var(--color-secondary);
+      display: inline-block;
+      margin-bottom: .65rem;
+    }
+
+    /* ── BUTTONS ── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: .72rem 1.45rem;
+      font-size: .92rem;
+      font-weight: 600;
+      border-radius: var(--radius);
+      text-decoration: none;
+      transition: var(--transition);
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: var(--color-primary);
+      color: #fff;
+      border: 1px solid var(--color-primary);
+    }
+
+    .btn-primary:hover {
+      background: var(--color-secondary);
+      border-color: var(--color-secondary);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--color-primary);
+      border: 1px solid var(--color-border);
+    }
+
+    .btn-outline:hover {
+      background: var(--color-light);
+      border-color: var(--color-muted);
+    }
+
+    /* ── SECTION HEADER ── */
+    .sec-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 3.5rem;
+    }
+
+    .sec-header p {
+      font-size: 1.1rem;
+    }
+
+    /* ── SERVICE CATEGORY BLOCK ── */
+    .service-block {
+      margin-bottom: 5rem;
+    }
+
+    .service-block:last-child {
+      margin-bottom: 0;
+    }
+
+    .service-block-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 2rem;
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .service-block-icon {
+      flex-shrink: 0;
+      width: 60px;
+      height: 60px;
+      border-radius: 12px;
+      background: rgba(37, 99, 235, .08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-secondary);
+    }
+
+    .service-block-meta h2 {
+      font-size: 1.75rem;
+      margin-bottom: .5rem;
+    }
+
+    .service-block-meta p {
+      font-size: 1rem;
+      margin-bottom: 0;
+      max-width: 680px;
+    }
+
+    /* ── DELIVERABLES + TECH STACKS SPLIT ── */
+    .service-body {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+    }
+
+    .service-col h4 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--color-primary);
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      font-size: .8rem;
+    }
+
+    .deliverable-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: .7rem;
+    }
+
+    .deliverable-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: .65rem;
+      font-size: .92rem;
+      color: var(--color-text);
+      line-height: 1.45;
+    }
+
+    .deliverable-list li svg {
+      color: var(--color-secondary);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    /* ── TECH STACK BADGES ── */
+    .tech-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .45rem;
+    }
+
+    .tech-badge {
+      font-size: .72rem;
+      font-weight: 600;
+      color: var(--color-primary);
+      background: var(--color-light);
+      border: 1px solid var(--color-border);
+      padding: .2rem .55rem;
+      border-radius: 5px;
+      white-space: nowrap;
+    }
+
+    .tech-badge.highlight {
+      background: rgba(37, 99, 235, .07);
+      border-color: rgba(37, 99, 235, .2);
+      color: var(--color-secondary);
+    }
+
+    /* ── CATEGORY DIVIDER ── */
+    .service-divider {
+      border: none;
+      border-top: 1px solid var(--color-border);
+      margin: 4rem 0;
+    }
+
+    /* ── CTA BAND ── */
+    .cta-band {
+      background: var(--color-primary);
+      border-radius: var(--radius);
+      padding: 3.5rem 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .cta-band h2 {
+      color: #fff;
+      font-size: 1.6rem;
+      margin-bottom: .4rem;
+    }
+
+    .cta-band p {
+      color: #94A3B8;
+      margin-bottom: 0;
+    }
+
+    .btn-sky {
+      background: var(--color-secondary);
+      color: #fff;
+      border: 1px solid var(--color-secondary);
+      flex-shrink: 0;
+    }
+
+    .btn-sky:hover {
+      background: #1d4ed8;
+      border-color: #1d4ed8;
+    }
+
+    /* ── FOOTER ── */
+    .footer {
+      background: var(--color-primary);
+      color: #fff;
+      padding: 5rem 0 2rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr .8fr 1.2fr;
+      gap: 3rem;
+      margin-bottom: 4rem;
+    }
+
+    .footer-col h3 {
+      color: #fff;
+      font-size: .95rem;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      margin-bottom: 1.4rem;
+      font-weight: 600;
+    }
+
+    .footer-col p {
+      color: #94A3B8;
+      font-size: .88rem;
+      line-height: 1.6;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: .7rem;
+    }
+
+    .footer-links a {
+      color: #94A3B8;
+      text-decoration: none;
+      font-size: .88rem;
+      transition: var(--transition);
+    }
+
+    .footer-links a:hover {
+      color: #fff;
+      padding-left: 2px;
+    }
+
+    .footer-logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: .7rem;
+      text-decoration: none;
+      margin-bottom: 1rem;
+    }
+
+    .footer-logo-name {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .footer-addr {
+      font-style: normal;
+      color: #94A3B8;
+      font-size: .85rem;
+      line-height: 1.65;
+    }
+
+    .footer-addr strong {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #1E293B;
+      padding-top: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-copy {
+      color: #64748B;
+      font-size: .85rem;
+      margin-bottom: 0;
+    }
+
+    .footer-legal {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .footer-legal a {
+      color: #64748B;
+      text-decoration: none;
+      font-size: .85rem;
+      transition: var(--transition);
+    }
+
+    .footer-legal a:hover {
+      color: #fff;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 1024px) {
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 1080px) {
+            .menu-toggle {
+        display: block;
+        z-index: 1001;
+      }
+      
+      .nav-menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 300px;
+        max-width: 85vw;
+        height: 100vh;
+        background-color: var(--color-background);
+        border-left: 1px solid var(--color-border);
+        padding: 5.5rem 2rem 2.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        box-shadow: -8px 0 25px -5px rgba(15, 23, 42, 0.08);
+        z-index: 999;
+        transform: translateX(100%);
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        overflow-y: auto;
+      }
+
+      .nav-menu.active {
+        display: flex;
+        transform: translateX(0);
+      }
+
+      .nav-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(15, 23, 42, 0.45);
+        backdrop-filter: blur(4px);
+        z-index: 998;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.35s ease, visibility 0.35s ease;
+      }
+
+      .nav-overlay.active {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .nav-link {
+        width: 100%;
+        padding: 0.5rem 0;
+        font-size: 1rem;
+      }
+
+      .nav-link:hover, .nav-link.active {
+        border-bottom-color: transparent;
+        color: var(--color-secondary);
+        padding-left: 0.5rem;
+      }
+
+      .nav-btn {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+        margin-top: 0.5rem;
+        padding: 0.75rem;
+      }
+      .nav-dropdown { width: 100%; flex-direction: column; align-items: flex-start; }
+      .nav-dropdown-btn { width: 100%; padding: .45rem 0; font-size: .95rem; border-bottom-color: transparent !important; justify-content: space-between; }
+      .nav-dropdown-btn:hover { color: var(--color-secondary); padding-left: .4rem; }
+      .nav-dropdown-menu { position: static; width: 100%; box-shadow: none; border-radius: 0; border: none; border-left: 2px solid var(--color-border); margin-top: .25rem; padding: .25rem 0 .25rem .75rem; background: transparent; }
+      .nav-dropdown-item { padding: .4rem .5rem; font-size: .9rem; }
+      
+      .service-body {
+        grid-template-columns: 1fr;
+        gap: 1.75rem;
+      }
+
+      .service-block-header {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .cta-band {
+        padding: 2.5rem 2rem;
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+      
+
+      .nav a:hover,
+      .nav a.active {
+        border-bottom-color: transparent;
+        color: var(--color-secondary);
+        padding-left: .4rem;
+      }
+
+      .nav-dropdown {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-dropdown-btn {
+        width: 100%;
+        padding: .45rem 0;
+        font-size: .95rem;
+        border-bottom-color: transparent !important;
+        justify-content: space-between;
+      }
+
+      .nav-dropdown-btn:hover {
+        color: var(--color-secondary);
+        padding-left: .4rem;
+      }
+
+      .nav-dropdown-menu {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        border-radius: 0;
+        border: none;
+        border-left: 2px solid var(--color-border);
+        margin-top: .25rem;
+        padding: .25rem 0 .25rem .75rem;
+        background: transparent;
+      }
+
+      .nav-dropdown-item {
+        padding: .4rem .5rem;
+        font-size: .9rem;
+      }
+
+      .service-body {
+        grid-template-columns: 1fr;
+        gap: 1.75rem;
+      }
+
+      .service-block-header {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .cta-band {
+        padding: 2.5rem 2rem;
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .section {
+        padding: 3.5rem 0;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .footer-legal {
+        flex-direction: column;
+        gap: .6rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════ HEADER ═══════════════════════════ -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo" aria-label="GrindQ Technologies Logo Home"><span class="logo-text">GrindQ Technologies</span>
+      </a>
+      
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle Navigation Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="4" y1="6" x2="20" y2="6"></line>
+          <line x1="4" y1="12" x2="20" y2="12"></line>
+          <line x1="4" y1="18" x2="20" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="nav-overlay" id="navOverlay"></div>
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link active">Services</a>
+        <a href="applications.html" class="nav-link">Applications</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-btn" id="policiesBtn" aria-haspopup="true" aria-expanded="false">Policies <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="nav-dropdown-menu" id="policiesMenu">
+            <a href="privacy-policy.html" class="nav-dropdown-item">Privacy Policy</a>
+            <a href="terms.html" class="nav-dropdown-item">Terms &amp; Conditions</a>
+            <a href="refund-policy.html" class="nav-dropdown-item">Refund Policy</a>
+          </div>
+        </div>
+        <a href="contact.html" class="nav-btn">Contact Us <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 6px; transition: transform 0.2s;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ════ PAGE BANNER ════ -->
+    <section class="page-banner">
+      <div class="container">
+        <span class="tag">What We Build</span>
+        <h1>Comprehensive Software Services</h1>
+        <p>End-to-end software engineering across all major platforms and technology stacks — tailored for startups,
+          SMEs, and enterprises.</p>
+      </div>
+    </section>
+
+            <!-- ════ SERVICES CONTENT ════ -->
+    <section class="section">
+      <div class="container">
+        
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-card-header">
+              <div class="service-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+              <span class="service-card-number">01</span>
+            </div>
+            <h3>Web Development</h3>
+            <p>Custom SaaS web apps, e-commerce stores, client portals, and responsive websites optimized for scale, SEO, and speed.</p>
+            <div class="service-card-divider"></div>
+            <div class="service-card-section">
+              <h4>Key Deliverables</h4>
+              <ul class="service-card-deliverables">
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Full-Stack Web Applications</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>E-Commerce & Checkout Systems</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Admin Dashboards & Data Portals</li>
+              </ul>
+            </div>
+            <div class="service-card-divider"></div>
+            <div class="service-card-section">
+              <h4>Tech Stack</h4>
+              <div class="service-card-tech">
+                <span>React.js</span>
+                <span>Next.js</span>
+                <span>FastAPI</span>
+                <span>Node.js</span>
+                <span>PostgreSQL</span>
+              </div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-card-header">
+              <div class="service-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
+              <span class="service-card-number">02</span>
+            </div>
+            <h3>Mobile App Development</h3>
+            <p>Native and cross-platform mobile apps for iOS and Android built with offline support and intuitive layouts.</p>
+            <div class="service-card-divider"></div>
+            <div class="service-card-section">
+              <h4>Key Deliverables</h4>
+              <ul class="service-card-deliverables">
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>iOS & Android Mobile Apps</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>SwiftUI & Kotlin Native Apps</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Offline Sync & Database Engines</li>
+              </ul>
+            </div>
+            <div class="service-card-divider"></div>
+            <div class="service-card-section">
+              <h4>Tech Stack</h4>
+              <div class="service-card-tech">
+                <span>Flutter</span>
+                <span>React Native</span>
+                <span>SwiftUI</span>
+                <span>Kotlin</span>
+                <span>Firebase</span>
+              </div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-card-header">
+              <div class="service-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/></svg></div>
+              <span class="service-card-number">03</span>
+            </div>
+            <h3>CRM & ERP Software</h3>
+            <p>Internal business tools that automate workflow pipelines, manage logistics, and coordinate accounting dashboards.</p>
+            <div class="service-card-divider"></div>
+            <div class="service-card-section">
+              <h4>Key Deliverables</h4>
+              <ul class="service-card-deliverables">
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Customer Pipeline Trackers</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Inventory & Asset Managers</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>HR & Payroll Payroll Tooling</li>
+              </ul>
+            </div>
+            <div class="service-card-divider"></div>
+            <div class="service-card-section">
+              <h4>Tech Stack</h4>
+              <div class="service-card-tech">
+                <span>C# / .NET</span>
+                <span>Spring Boot</span>
+                <span>Odoo</span>
+                <span>SQL Server</span>
+                <span>Power BI</span>
+              </div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-card-header">
+              <div class="service-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg></div>
+              <span class="service-card-number">04</span>
+            </div>
+            <h3>Cloud & DevOps Solutions</h3>
+            <p>Infrastructure automation, CI/CD pipeline building, secure hosting migrations, and server status monitoring.</p>
+            <div class="service-card-divider"></div>
+            <div class="service-card-section">
+              <h4>Key Deliverables</h4>
+              <ul class="service-card-deliverables">
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>AWS/GCP Cloud Architecture</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>CI/CD Pipeline Implementations</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Docker & Container Management</li>
+              </ul>
+            </div>
+            <div class="service-card-divider"></div>
+            <div class="service-card-section">
+              <h4>Tech Stack</h4>
+              <div class="service-card-tech">
+                <span>AWS</span>
+                <span>Google Cloud</span>
+                <span>Docker</span>
+                <span>Terraform</span>
+                <span>GitHub Actions</span>
+              </div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-card-header">
+              <div class="service-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg></div>
+              <span class="service-card-number">05</span>
+            </div>
+            <h3>AI & Data Analytics</h3>
+            <p>LLM agent setups, predictive analytics databases, and clean data processing pipelines that unlock insights.</p>
+            <div class="service-card-divider"></div>
+            <div class="service-card-section">
+              <h4>Key Deliverables</h4>
+              <ul class="service-card-deliverables">
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>AI Agent & Chatbot Tooling</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Executive Analytics Dashboards</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Data Warehouses & Pipelines</li>
+              </ul>
+            </div>
+            <div class="service-card-divider"></div>
+            <div class="service-card-section">
+              <h4>Tech Stack</h4>
+              <div class="service-card-tech">
+                <span>Python</span>
+                <span>TensorFlow</span>
+                <span>OpenAI API</span>
+                <span>Pandas</span>
+                <span>Snowflake</span>
+              </div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-card-header">
+              <div class="service-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/></svg></div>
+              <span class="service-card-number">06</span>
+            </div>
+            <h3>Database & Backend Systems</h3>
+            <p>High-performance API design, structured relational database logic, and scalable microservice layers.</p>
+            <div class="service-card-divider"></div>
+            <div class="service-card-section">
+              <h4>Key Deliverables</h4>
+              <ul class="service-card-deliverables">
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>RESTful & GraphQL API Building</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Secure Auth & Gateway Systems</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>High-Throughput Microservices</li>
+              </ul>
+            </div>
+            <div class="service-card-divider"></div>
+            <div class="service-card-section">
+              <h4>Tech Stack</h4>
+              <div class="service-card-tech">
+                <span>Node.js</span>
+                <span>Go Lang</span>
+                <span>PostgreSQL</span>
+                <span>MongoDB</span>
+                <span>Redis</span>
+              </div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-card-header">
+              <div class="service-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg></div>
+              <span class="service-card-number">07</span>
+            </div>
+            <h3>UI/UX & Prototyping</h3>
+            <p>User journey design, high-fidelity interactive wireframes, and standardized cross-platform design libraries.</p>
+            <div class="service-card-divider"></div>
+            <div class="service-card-section">
+              <h4>Key Deliverables</h4>
+              <ul class="service-card-deliverables">
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Interactive Figma Wireframes</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>User Journey Design Maps</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Responsive Component Libraries</li>
+              </ul>
+            </div>
+            <div class="service-card-divider"></div>
+            <div class="service-card-section">
+              <h4>Tech Stack</h4>
+              <div class="service-card-tech">
+                <span>Figma</span>
+                <span>Adobe XD</span>
+                <span>Storybook</span>
+                <span>Tailwind CSS</span>
+                <span>HTML5</span>
+              </div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-card-header">
+              <div class="service-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+              <span class="service-card-number">08</span>
+            </div>
+            <h3>Publishing & Maintenance</h3>
+            <p>Google Play and Apple App Store hosting, security updates, SLA uptime monitoring, and patch maintenance.</p>
+            <div class="service-card-divider"></div>
+            <div class="service-card-section">
+              <h4>Key Deliverables</h4>
+              <ul class="service-card-deliverables">
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Play & App Store Deployment</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>ASO & Store Compliance audits</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Security Patches & Uptime SLA</li>
+              </ul>
+            </div>
+            <div class="service-card-divider"></div>
+            <div class="service-card-section">
+              <h4>Tech Stack</h4>
+              <div class="service-card-tech">
+                <span>Play Console</span>
+                <span>App Store Connect</span>
+                <span>Sentry</span>
+                <span>Firebase</span>
+              </div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-card-header">
+              <div class="service-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+              <span class="service-card-number">09</span>
+            </div>
+            <h3>Digital Learning Services</h3>
+            <p>LMS setups, video classroom implementations, assessment modules, and course publishing tools.</p>
+            <div class="service-card-divider"></div>
+            <div class="service-card-section">
+              <h4>Key Deliverables</h4>
+              <ul class="service-card-deliverables">
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>White-Label LMS Environments</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>WebRTC Virtual Classrooms</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Graded Quiz & Evaluation Tools</li>
+              </ul>
+            </div>
+            <div class="service-card-divider"></div>
+            <div class="service-card-section">
+              <h4>Tech Stack</h4>
+              <div class="service-card-tech">
+                <span>React.js</span>
+                <span>WebRTC</span>
+                <span>Node.js</span>
+                <span>AWS Cloudfront</span>
+                <span>Moodle</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="service-divider" style="margin: 4rem 0 3rem 0; border: none; border-top: 1px solid var(--color-border);">
+
+        <!-- CTA BAND -->
+        <div class="cta-band" style="background: var(--color-primary); border-radius: var(--radius); padding: 3.5rem 4rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap;">
+          <div>
+            <h2 style="color: #fff; font-size: 1.6rem; margin-bottom: .4rem;">Have a custom technology project in mind?</h2>
+            <p style="color: #94A3B8; margin-bottom: 0;">Speak to our system architects to get a detailed specification and SLA proposal.</p>
+          </div>
+          <a href="contact.html" class="btn btn-sky" style="background: var(--color-secondary); color: #fff; border: 1px solid var(--color-secondary); border-radius: var(--radius); padding: .72rem 1.45rem; font-size: .92rem; font-weight: 600; text-decoration: none; transition: var(--transition); display: inline-block;">Get in Touch</a>
+        </div>
+
+      </div>
+    </section>
+
+  
+
+  
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="footer-logo-wrap"><span class="footer-logo-name">GrindQ Technologies</span>
+          </a>
+          <p style="margin-bottom:1.4rem">Independent IT Services and Software Development Company based in Coimbatore,
+            India.</p>
+          <address class="footer-addr">
+            <strong>Registered Office:</strong><br>
+            120/3B, Main Road, Karavalli Madhapur,<br>
+            Somanur, Coimbatore, TN – 641668, India
+          </address>
+        </div>
+        <div class="footer-col">
+          <h3>Services</h3>
+          <ul class="footer-links">
+            <li><a href="services.html#web-development">Web Development</a></li>
+            <li><a href="services.html#app-development">App Development</a></li>
+            <li><a href="services.html#crm-erp">CRM &amp; ERP</a></li>
+            <li><a href="services.html#cloud-devops">Cloud &amp; DevOps</a></li>
+            <li><a href="services.html#ai-analytics">AI &amp; Analytics</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Company</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="applications.html">Applications</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Legal &amp; Support</h3>
+          <ul class="footer-links">
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+            <li><a href="refund-policy.html">Refund Policy</a></li>
+            <li style="margin-top:1rem;color:#94A3B8;font-size:.83rem">Support:<br>
+              <a href="mailto:support@grindq.com" style="color:#fff;font-weight:600">support@grindq.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 GrindQ Technologies LLP. All Rights Reserved.</p>
+        <div class="footer-legal">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+          <a href="refund-policy.html">Refund Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Menu & Services JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Hamburger Menu Toggle
+            // Hamburger Menu Drawer Toggle
+      const menuToggle = document.getElementById('menuToggle');
+      const navMenu = document.getElementById('navMenu');
+      const navOverlay = document.getElementById('navOverlay');
+      
+      if (menuToggle && navMenu) {
+        function toggleMenu() {
+          const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+          const newExpanded = !isExpanded;
+          menuToggle.setAttribute('aria-expanded', newExpanded);
+          navMenu.classList.toggle('active');
+          if (navOverlay) {
+            navOverlay.classList.toggle('active');
+          }
+          document.body.style.overflow = newExpanded ? 'hidden' : '';
+        }
+
+        menuToggle.addEventListener('click', toggleMenu);
+        if (navOverlay) {
+          navOverlay.addEventListener('click', toggleMenu);
+        }
+
+        const navLinks = navMenu.querySelectorAll('.nav-link, .nav-dropdown-item, .nav-btn');
+        navLinks.forEach(link => {
+          link.addEventListener('click', function() {
+            menuToggle.setAttribute('aria-expanded', 'false');
+            navMenu.classList.remove('active');
+            if (navOverlay) {
+              navOverlay.classList.remove('active');
+            }
+            document.body.style.overflow = '';
+          });
+        });
+      }
+
+      // Policies dropdown
+      const polBtn = document.getElementById('policiesBtn');
+      const polMenu = document.getElementById('policiesMenu');
+      if (polBtn && polMenu) {
+        polBtn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          const show = polMenu.classList.toggle('show');
+          polBtn.setAttribute('aria-expanded', show);
+        });
+        document.addEventListener('click', function(e) {
+          if (!polBtn.contains(e.target)) {
+            polMenu.classList.remove('show');
+            polBtn.setAttribute('aria-expanded', 'false');
+          }
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>
